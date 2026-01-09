@@ -1,10 +1,13 @@
 import logger from "../Utils/logger.js";
 import {validateRegistration} from "../Utils/validation.js";
 import User from "../models/User.js";
+import generateToken from "../Utils/generateToken.js"
 
 // User Registeration : 
 export const resgisterUser = async(req,res) =>{
+    
     logger.info('registration Started :')
+    
     try {
         // 1.) Validate Requested Data :
         const {error} = validateRegistration(req.body);
@@ -40,9 +43,20 @@ export const resgisterUser = async(req,res) =>{
 
         logger.warn("User Saved Successfully", user._id);
 
+        // 5.) Generate Refresh and AccessTokens: 
+        const {accessToken, refreshToken} = await generateToken(user)
+
+        if(accessToken && refreshToken){
+            res.status(201).json({
+                success: true,
+                message : "User Registeration Successful",
+                accessToken,
+                refreshToken 
+            });
+        }
     } catch (error) {
-        console.log(error);
-        res.status(500).json({"The error : ":  error, "error": true})
+        logger.error("Errro occured in registeration", error)
+        res.status(500).json({success: false, message: "Internal Server Issue"});
     }
 } 
 

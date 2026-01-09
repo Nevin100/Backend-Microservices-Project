@@ -1,5 +1,4 @@
 import jwt from "jsonwebtoken";
-import logger from "./logger.js";
 import crypto from "crypto";
 import RefreshToken from "../models/token.js"
 
@@ -28,9 +27,10 @@ const generateToken = async(user) => {
         )   
 
         return { accessToken, refreshToken}
-        
+
     } catch (error) {
         throw new Error("Token generation failed");
-
     }
 }
+
+export default generateToken
