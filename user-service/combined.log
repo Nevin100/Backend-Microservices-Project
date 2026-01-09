@@ -1,0 +1,4 @@
+{"level":"info","message":"User-Service is running on 3001","service":"user-service","timestamp":"2026-01-09T17:10:27.956Z"}
+{"level":"info","message":"Connected to MongoDB Database","service":"user-service","timestamp":"2026-01-09T17:10:28.588Z"}
+{"level":"info","message":"User-Service is running on port 3001","service":"user-service","timestamp":"2026-01-09T17:48:08.881Z"}
+{"level":"info","message":"Connected to MongoDB Database","service":"user-service","timestamp":"2026-01-09T17:48:09.492Z"}
