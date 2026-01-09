@@ -27,6 +27,7 @@
     "mongodb": "^7.0.0",
     "mongoose": "^9.1.2",
     "rate-limit-redis": "^4.3.1",
+    "rate-limiter-flexible": "^9.0.1",
     "winston": "^3.19.0"
   }
 }
