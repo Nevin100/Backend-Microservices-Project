@@ -99,7 +99,6 @@ app.use((req, res, next) => {
 // Extra protection against:
 // Brute force attacks
 // Credential stuffing
-
 const sensitiveEndpointsLimiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes window
     max: 50,                 // Max 50 requests per IP
