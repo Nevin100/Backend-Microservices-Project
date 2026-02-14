@@ -1,4 +1,3 @@
-
 //Entry point of User Service (Microservice)
 // Responsibilities:
 // Load environment variables
@@ -27,10 +26,17 @@ import helmet from "helmet"; // Protects HTTP headers
 import cors from "cors";     // Enables Cross-Origin requests
 
 // Redis & Rate Limiting libraries
-import { RateLimiterRedis } from "rate-limiter-flexible"; // Advanced rate limiter
-import Redis from "ioredis";                              // Redis client
-import { rateLimit } from "express-rate-limit";           // Express rate limiting
-import { RedisStore } from "rate-limit-redis";            // Redis-backed store
+// Advanced rate limiter :
+import { RateLimiterRedis } from "rate-limiter-flexible"; 
+
+// Redis client
+import Redis from "ioredis";                              
+
+// Express rate limiting
+import { rateLimit } from "express-rate-limit";
+
+// Redis-backed store
+import { RedisStore } from "rate-limit-redis";            
 
 // Application routes
 import AuthRoutes from "./Routers/users.routes.js";
@@ -71,13 +77,19 @@ app.use((req, res, next) => {
 });
 
 //GLOBAL RATE LIMITER (DDOS PROTECTION)
-
 //Limits number of requests per IP
 const rateLimiter = new RateLimiterRedis({
-    storeClient: redisClient, // Redis as storage
-    keyPrefix: "middleware",  // Redis key prefix
-    points: 10,               // 10 requests
-    duration: 1               // per 1 second
+    // Redis as storage
+    storeClient: redisClient, 
+    
+    // Redis key prefix
+    keyPrefix: "middleware",  
+    
+    // 10 requests
+    points: 10,               
+    
+    // per 1 second
+    duration: 1               
 });
 
 // Apply rate limiter globally
@@ -100,10 +112,18 @@ app.use((req, res, next) => {
 // Brute force attacks
 // Credential stuffing
 const sensitiveEndpointsLimiter = rateLimit({
-    windowMs: 15 * 60 * 1000, // 15 minutes window
-    max: 50,                 // Max 50 requests per IP
-    standardHeaders: true,   // Return rate limit info in headers
-    legacyHeaders: false,    // Disable legacy headers
+     // 15 minutes window
+    windowMs: 15 * 60 * 1000,
+
+    // Max 50 requests per IP
+    max: 50,                 
+
+    // Return rate limit info in headers
+    standardHeaders: true,  
+    
+    // Disable legacy headers
+    // Legacy Headers are basically the old X-RateLimit-* headers.
+    legacyHeaders: false,   
 
     // Custom handler when limit is exceeded
     handler: (req, res) => {
@@ -136,12 +156,12 @@ app.use(errorHandler);
 // Server Initialization : 
 app.listen(process.env.PORT || PORT, () => {
     logger.info(`User-Service is running on port ${PORT}`);
-    ConnectDB(); // Connect to database after server starts
+    // Connect to database after server starts
+    ConnectDB(); 
 });
 
 //UNHANDLED PROMISE REJECTION HANDLER
 //Prevents silent crashes in production
-
 process.on("unhandledRejection", (reason, promise) => {
     logger.error("Unhandled Rejection at:", promise);
     logger.error("Reason:", reason);
