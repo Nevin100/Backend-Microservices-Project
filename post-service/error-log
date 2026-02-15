@@ -1,0 +1,2 @@
+{"level":"error","message":"Error in createPost: Cannot read properties of undefined (reading '_id')","service":"post-service","timestamp":"2026-02-15T18:09:08.357Z"}
+{"level":"error","message":"Error in createPost: Cannot read properties of undefined (reading '_id')","service":"post-service","timestamp":"2026-02-15T18:11:18.303Z"}

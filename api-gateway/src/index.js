@@ -23,6 +23,9 @@ import proxy from "express-http-proxy";
 // Import global error handling middleware
 import errorHandler from "./Middleware/errorHandler.js";
 
+// Import the Validation middleware
+import validateToken from "./Middleware/authMiddleware.js";
+
 // Initialize Express application
 const app = express();
 
@@ -154,6 +157,39 @@ app.use(
     })
 );
 
+// Forward all '/v1/posts' requests to POST_SERVICE_URL
+app.use(
+    "/v1/posts",
+    validateToken,
+    proxy(process.env.POST_SERVICE_URL, {
+
+        // Spread base proxy options
+        ...proxyOptions,
+
+        // Modify outgoing proxy request headers
+        proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
+
+            // Ensure content type is JSON
+            proxyReqOpts.headers["Content-Type"] = "application/json";
+            
+            // Forward Authorization header from client to post service
+            proxyReqOpts.headers['x-user-id'] = srcReq.user.userId;
+            return proxyReqOpts;
+        },
+
+        // Intercept and log response from post service
+        userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
+
+            // Log response details
+            logger.info(
+                `Received response from post service for ${userReq.method} ${userReq.originalUrl} with status ${proxyRes.statusCode}`
+            );
+
+            // Return original response data
+            return proxyResData;
+        }
+    })
+);
 
 // Apply global error handling middleware
 app.use(errorHandler);
@@ -165,5 +201,6 @@ app.listen(PORT, () => {
     // Log server startup information
     logger.info(`API Gateway is running on port ${PORT}`);
     logger.info(`User Service is running on ${process.env.USER_SERVICE_URL}`);
+    logger.info(`Post Service is running on ${process.env.POST_SERVICE_URL}`);
     logger.info(`Redis is running on ${process.env.REDIS_URL}`);
 });

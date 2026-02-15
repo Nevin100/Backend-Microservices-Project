@@ -19,3 +19,39 @@
 {"level":"info","message":"API Gateway is running on port 3000","service":"api-gateway","timestamp":"2026-02-15T17:20:15.967Z"}
 {"level":"info","message":"User Service is running on http://localhost:3001","service":"api-gateway","timestamp":"2026-02-15T17:20:15.980Z"}
 {"level":"info","message":"Redis is running on redis://localhost:6379","service":"api-gateway","timestamp":"2026-02-15T17:20:15.981Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"api-gateway","timestamp":"2026-02-15T17:49:47.702Z"}
+{"level":"info","message":"User Service is running on http://localhost:3001","service":"api-gateway","timestamp":"2026-02-15T17:49:47.719Z"}
+{"level":"info","message":"Post Service is running on http://localhost:3002","service":"api-gateway","timestamp":"2026-02-15T17:49:47.720Z"}
+{"level":"info","message":"Redis is running on redis://localhost:6379","service":"api-gateway","timestamp":"2026-02-15T17:49:47.721Z"}
+{"level":"info","message":"Received request: POST /v1/auth/login from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T17:54:03.974Z"}
+{"level":"info","message":"Received response from user service for POST /v1/auth/login with status 200","service":"api-gateway","timestamp":"2026-02-15T17:54:04.782Z"}
+{"level":"info","message":"Received request: POST /v1/posts/create-posts from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:03:35.813Z"}
+{"level":"error","message":"ReferenceError: logger is not defined\n    at file:///C:/Users/DELL/Desktop/VS%20CODE/microservices/api-gateway/src/Middleware/authMiddleware.js:19:13\n    at C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\api-gateway\\node_modules\\jsonwebtoken\\verify.js:190:16\n    at getSecret (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\api-gateway\\node_modules\\jsonwebtoken\\verify.js:97:14)\n    at module.exports [as verify] (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\api-gateway\\node_modules\\jsonwebtoken\\verify.js:101:10)\n    at validateToken (file:///C:/Users/DELL/Desktop/VS%20CODE/microservices/api-gateway/src/Middleware/authMiddleware.js:17:9)\n    at Layer.handleRequest (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\api-gateway\\node_modules\\router\\lib\\layer.js:152:17)\n    at trimPrefix (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\api-gateway\\node_modules\\router\\index.js:342:13)\n    at C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\api-gateway\\node_modules\\router\\index.js:297:9\n    at processParams (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\api-gateway\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\api-gateway\\node_modules\\router\\index.js:291:5)","service":"api-gateway","timestamp":"2026-02-15T18:03:35.827Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"api-gateway","timestamp":"2026-02-15T18:04:28.034Z"}
+{"level":"info","message":"User Service is running on http://localhost:3001","service":"api-gateway","timestamp":"2026-02-15T18:04:28.045Z"}
+{"level":"info","message":"Post Service is running on http://localhost:3002","service":"api-gateway","timestamp":"2026-02-15T18:04:28.051Z"}
+{"level":"info","message":"Redis is running on redis://localhost:6379","service":"api-gateway","timestamp":"2026-02-15T18:04:28.053Z"}
+{"level":"info","message":"Received request: POST /v1/posts/create-posts from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:04:35.063Z"}
+{"level":"warn","message":"Invalid token provided!! Unauthorized access attempt.","service":"api-gateway","timestamp":"2026-02-15T18:04:35.073Z"}
+{"level":"info","message":"Received request: POST /v1/auth/login from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:05:06.415Z"}
+{"level":"info","message":"Received response from user service for POST /v1/auth/login with status 200","service":"api-gateway","timestamp":"2026-02-15T18:05:06.845Z"}
+{"level":"info","message":"Received request: POST /v1/posts/create-posts from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:05:27.207Z"}
+{"level":"info","message":"Received response from post service for POST /v1/posts/create-posts with status 404","service":"api-gateway","timestamp":"2026-02-15T18:05:27.332Z"}
+{"level":"info","message":"Received request: POST /v1/posts/create-post from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:06:13.105Z"}
+{"level":"info","message":"Received response from post service for POST /v1/posts/create-post with status 429","service":"api-gateway","timestamp":"2026-02-15T18:06:13.138Z"}
+{"level":"info","message":"Received request: POST /v1/posts/create-post from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:06:54.477Z"}
+{"level":"info","message":"Received response from post service for POST /v1/posts/create-post with status 429","service":"api-gateway","timestamp":"2026-02-15T18:06:54.597Z"}
+{"level":"info","message":"Received request: POST /v1/posts/create-post from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:07:54.687Z"}
+{"level":"info","message":"Received response from post service for POST /v1/posts/create-post with status 429","service":"api-gateway","timestamp":"2026-02-15T18:07:54.790Z"}
+{"level":"info","message":"Received request: POST /v1/posts/create-post from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:08:42.395Z"}
+{"level":"info","message":"Received response from post service for POST /v1/posts/create-post with status 400","service":"api-gateway","timestamp":"2026-02-15T18:08:42.518Z"}
+{"level":"info","message":"Received request: POST /v1/posts/create-post from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:09:08.255Z"}
+{"level":"info","message":"Received response from post service for POST /v1/posts/create-post with status 500","service":"api-gateway","timestamp":"2026-02-15T18:09:08.373Z"}
+{"level":"info","message":"Received request: POST /v1/posts/create-post from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:10:47.241Z"}
+{"level":"warn","message":"Invalid token provided!! Unauthorized access attempt.","service":"api-gateway","timestamp":"2026-02-15T18:10:47.244Z"}
+{"level":"info","message":"Received request: POST /v1/auth/login from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:10:59.770Z"}
+{"level":"info","message":"Received response from user service for POST /v1/auth/login with status 200","service":"api-gateway","timestamp":"2026-02-15T18:11:00.272Z"}
+{"level":"info","message":"Received request: POST /v1/posts/create-post from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:11:18.268Z"}
+{"level":"info","message":"Received response from post service for POST /v1/posts/create-post with status 500","service":"api-gateway","timestamp":"2026-02-15T18:11:18.312Z"}
+{"level":"info","message":"Received request: POST /v1/posts/create-post from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:12:46.417Z"}
+{"level":"info","message":"Received response from post service for POST /v1/posts/create-post with status 201","service":"api-gateway","timestamp":"2026-02-15T18:12:46.665Z"}

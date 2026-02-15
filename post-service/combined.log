@@ -1,0 +1,55 @@
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-15T17:50:53.301Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-15T17:50:53.812Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-15T17:57:02.612Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-15T17:57:03.134Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-15T17:57:58.288Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-15T17:57:59.075Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-15T17:59:37.432Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-15T17:59:38.985Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-15T18:00:25.972Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-15T18:00:26.555Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-15T18:02:07.531Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-15T18:02:08.128Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-15T18:02:43.444Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-15T18:02:44.041Z"}
+{"level":"info","message":"Incoming Request: POST of /api/posts/create-posts","service":"post-service","timestamp":"2026-02-15T18:05:27.285Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-15T18:05:27.288Z"}
+{"level":"info","message":"Incoming Request: POST of /api/posts/create-post","service":"post-service","timestamp":"2026-02-15T18:06:13.114Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-15T18:06:13.116Z"}
+{"level":"warn","message":"Sensitive endpoint rate limit exceeded for IP: ::1","service":"post-service","timestamp":"2026-02-15T18:06:13.128Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-15T18:06:33.566Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-15T18:06:34.214Z"}
+{"level":"info","message":"Incoming Request: POST of /api/posts/create-post","service":"post-service","timestamp":"2026-02-15T18:06:54.552Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-15T18:06:54.558Z"}
+{"level":"warn","message":"Sensitive endpoint rate limit exceeded for IP: ::1","service":"post-service","timestamp":"2026-02-15T18:06:54.583Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-15T18:07:24.267Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-15T18:07:24.768Z"}
+{"level":"info","message":"Incoming Request: POST of /api/posts/create-post","service":"post-service","timestamp":"2026-02-15T18:07:54.749Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-15T18:07:54.751Z"}
+{"level":"warn","message":"Sensitive endpoint rate limit exceeded for IP: ::1","service":"post-service","timestamp":"2026-02-15T18:07:54.770Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-15T18:08:21.594Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-15T18:08:22.160Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-15T18:08:30.108Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-15T18:08:30.768Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-15T18:08:38.456Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-15T18:08:39.049Z"}
+{"level":"info","message":"Incoming Request: POST of /api/posts/create-post","service":"post-service","timestamp":"2026-02-15T18:08:42.459Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-15T18:08:42.460Z"}
+{"level":"info","message":"Creation of Post Starting..","service":"post-service","timestamp":"2026-02-15T18:08:42.472Z"}
+{"level":"warn","message":"Media URLs are missing or not an array in the request body","service":"post-service","timestamp":"2026-02-15T18:08:42.500Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-15T18:09:02.995Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-15T18:09:03.573Z"}
+{"level":"info","message":"Incoming Request: POST of /api/posts/create-post","service":"post-service","timestamp":"2026-02-15T18:09:08.313Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-15T18:09:08.314Z"}
+{"level":"info","message":"Creation of Post Starting..","service":"post-service","timestamp":"2026-02-15T18:09:08.325Z"}
+{"level":"error","message":"Error in createPost: Cannot read properties of undefined (reading '_id')","service":"post-service","timestamp":"2026-02-15T18:09:08.357Z"}
+{"level":"info","message":"Incoming Request: POST of /api/posts/create-post","service":"post-service","timestamp":"2026-02-15T18:11:18.283Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-15T18:11:18.287Z"}
+{"level":"info","message":"Creation of Post Starting..","service":"post-service","timestamp":"2026-02-15T18:11:18.300Z"}
+{"level":"error","message":"Error in createPost: Cannot read properties of undefined (reading '_id')","service":"post-service","timestamp":"2026-02-15T18:11:18.303Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-15T18:12:42.408Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-15T18:12:43.023Z"}
+{"level":"info","message":"Incoming Request: POST of /api/posts/create-post","service":"post-service","timestamp":"2026-02-15T18:12:46.499Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-15T18:12:46.507Z"}
+{"level":"info","message":"Creation of Post Starting..","service":"post-service","timestamp":"2026-02-15T18:12:46.542Z"}
+{"level":"info","message":"Post created successfully with ID: 69920c9e09a2eb0184fb0c9b","service":"post-service","timestamp":"2026-02-15T18:12:46.643Z"}

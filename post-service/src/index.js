@@ -51,7 +51,7 @@ app.use((req, res, next) => {
 // Sensitive Rate Limiter 
 const sensitiveEndpointsLimiter = rateLimit({
     windowMs: 60 * 1000, 
-    max: 5, 
+    max: 10, 
     standardHeaders: true, 
     legacyHeaders: false, 
     handler: (req, res) => {
@@ -68,7 +68,7 @@ const sensitiveEndpointsLimiter = rateLimit({
     }),
 });
 
-app.use("/api/posts/create-post", sensitiveEndpointsLimiter);
+// app.use("/api/posts/create-post", sensitiveEndpointsLimiter);
 app.use("/api/posts",(req,res, next) =>{
     req.redisClient = redisClient;
     next();
