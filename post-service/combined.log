@@ -61,3 +61,34 @@
 {"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-15T18:28:07.774Z"}
 {"level":"info","message":"Fetching All Posts Starting..","service":"post-service","timestamp":"2026-02-15T18:28:07.786Z"}
 {"level":"error","message":"Error in GetAllPosts: redisClient is not defined","service":"post-service","timestamp":"2026-02-15T18:28:07.788Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-15T18:29:16.812Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-15T18:29:17.529Z"}
+{"level":"info","message":"Incoming Request: GET of /api/posts/all","service":"post-service","timestamp":"2026-02-15T18:29:22.935Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-15T18:29:22.937Z"}
+{"level":"info","message":"Fetching All Posts Starting..","service":"post-service","timestamp":"2026-02-15T18:29:22.952Z"}
+{"level":"info","message":"Posts fetched from database and stored in cache for page: 1 and limit: 10","service":"post-service","timestamp":"2026-02-15T18:29:23.111Z"}
+{"level":"info","message":"Posts fetched successfully for page: 1 and limit: 10","service":"post-service","timestamp":"2026-02-15T18:29:23.128Z"}
+{"level":"info","message":"Incoming Request: GET of /api/posts/all","service":"post-service","timestamp":"2026-02-15T18:30:00.146Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-15T18:30:00.153Z"}
+{"level":"info","message":"Fetching All Posts Starting..","service":"post-service","timestamp":"2026-02-15T18:30:00.160Z"}
+{"level":"info","message":"Posts fetched from cache for page: 1 and limit: 10","service":"post-service","timestamp":"2026-02-15T18:30:00.165Z"}
+{"level":"info","message":"Incoming Request: GET of /api/posts/all","service":"post-service","timestamp":"2026-02-15T18:30:04.597Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-15T18:30:04.598Z"}
+{"level":"info","message":"Fetching All Posts Starting..","service":"post-service","timestamp":"2026-02-15T18:30:04.601Z"}
+{"level":"info","message":"Posts fetched from cache for page: 1 and limit: 10","service":"post-service","timestamp":"2026-02-15T18:30:04.603Z"}
+{"level":"info","message":"Incoming Request: GET of /api/posts/all","service":"post-service","timestamp":"2026-02-15T18:30:06.540Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-15T18:30:06.541Z"}
+{"level":"info","message":"Fetching All Posts Starting..","service":"post-service","timestamp":"2026-02-15T18:30:06.543Z"}
+{"level":"info","message":"Posts fetched from cache for page: 1 and limit: 10","service":"post-service","timestamp":"2026-02-15T18:30:06.545Z"}
+{"level":"info","message":"Incoming Request: GET of /api/posts/all","service":"post-service","timestamp":"2026-02-15T18:30:08.098Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-15T18:30:08.099Z"}
+{"level":"info","message":"Fetching All Posts Starting..","service":"post-service","timestamp":"2026-02-15T18:30:08.101Z"}
+{"level":"info","message":"Posts fetched from cache for page: 1 and limit: 10","service":"post-service","timestamp":"2026-02-15T18:30:08.103Z"}
+{"level":"info","message":"Incoming Request: GET of /api/posts/all","service":"post-service","timestamp":"2026-02-15T18:30:13.267Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-15T18:30:13.268Z"}
+{"level":"info","message":"Fetching All Posts Starting..","service":"post-service","timestamp":"2026-02-15T18:30:13.271Z"}
+{"level":"info","message":"Posts fetched from cache for page: 1 and limit: 10","service":"post-service","timestamp":"2026-02-15T18:30:13.276Z"}
+{"level":"info","message":"Incoming Request: GET of /api/posts/all","service":"post-service","timestamp":"2026-02-15T18:30:16.016Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-15T18:30:16.017Z"}
+{"level":"info","message":"Fetching All Posts Starting..","service":"post-service","timestamp":"2026-02-15T18:30:16.019Z"}
+{"level":"info","message":"Posts fetched from cache for page: 1 and limit: 10","service":"post-service","timestamp":"2026-02-15T18:30:16.023Z"}

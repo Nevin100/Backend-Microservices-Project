@@ -55,3 +55,23 @@
 {"level":"info","message":"Received response from post service for POST /v1/posts/create-post with status 500","service":"api-gateway","timestamp":"2026-02-15T18:11:18.312Z"}
 {"level":"info","message":"Received request: POST /v1/posts/create-post from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:12:46.417Z"}
 {"level":"info","message":"Received response from post service for POST /v1/posts/create-post with status 201","service":"api-gateway","timestamp":"2026-02-15T18:12:46.665Z"}
+{"level":"info","message":"Received request: GET /v1/posts/all from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:27:09.295Z"}
+{"level":"warn","message":"Invalid token provided!! Unauthorized access attempt.","service":"api-gateway","timestamp":"2026-02-15T18:27:09.297Z"}
+{"level":"info","message":"Received request: POST /v1/auth/login from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:27:26.440Z"}
+{"level":"info","message":"Received response from user service for POST /v1/auth/login with status 200","service":"api-gateway","timestamp":"2026-02-15T18:27:26.807Z"}
+{"level":"info","message":"Received request: GET /v1/posts/all from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:28:07.713Z"}
+{"level":"info","message":"Received response from post service for GET /v1/posts/all with status 500","service":"api-gateway","timestamp":"2026-02-15T18:28:07.801Z"}
+{"level":"info","message":"Received request: GET /v1/posts/all from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:29:22.852Z"}
+{"level":"info","message":"Received response from post service for GET /v1/posts/all with status 200","service":"api-gateway","timestamp":"2026-02-15T18:29:23.146Z"}
+{"level":"info","message":"Received request: GET /v1/posts/all from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:30:00.129Z"}
+{"level":"info","message":"Received response from post service for GET /v1/posts/all with status 200","service":"api-gateway","timestamp":"2026-02-15T18:30:00.199Z"}
+{"level":"info","message":"Received request: GET /v1/posts/all from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:30:04.592Z"}
+{"level":"info","message":"Received response from post service for GET /v1/posts/all with status 200","service":"api-gateway","timestamp":"2026-02-15T18:30:04.611Z"}
+{"level":"info","message":"Received request: GET /v1/posts/all from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:30:06.535Z"}
+{"level":"info","message":"Received response from post service for GET /v1/posts/all with status 200","service":"api-gateway","timestamp":"2026-02-15T18:30:06.548Z"}
+{"level":"info","message":"Received request: GET /v1/posts/all from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:30:08.093Z"}
+{"level":"info","message":"Received response from post service for GET /v1/posts/all with status 200","service":"api-gateway","timestamp":"2026-02-15T18:30:08.107Z"}
+{"level":"info","message":"Received request: GET /v1/posts/all from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:30:13.261Z"}
+{"level":"info","message":"Received response from post service for GET /v1/posts/all with status 200","service":"api-gateway","timestamp":"2026-02-15T18:30:13.280Z"}
+{"level":"info","message":"Received request: GET /v1/posts/all from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T18:30:16.009Z"}
+{"level":"info","message":"Received response from post service for GET /v1/posts/all with status 200","service":"api-gateway","timestamp":"2026-02-15T18:30:16.026Z"}
