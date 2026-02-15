@@ -1,5 +1,5 @@
 import express from "express";
-import {resgisterUser} from "../Controllers/user.controllers.js";
+import {loginUser, resgisterUser} from "../Controllers/user.controllers.js";
 
 const router = express.Router();
 
@@ -9,7 +9,7 @@ const router = express.Router();
 router.post("/register", resgisterUser);
 
 // 2.) Login Route :
-
+router.post("/login", loginUser);
 
 // 3.) LogOut Route :
 

@@ -11,3 +11,12 @@ export const validateRegistration = (data) => {
     return schema.validate(data)
 }   
 
+// Login vqalidation :
+export const validateLogin = (data) => {
+    const schema = Joi.object({
+        email : Joi.string().min(11).required(),
+        password : Joi.string().min(8).required()
+    })
+
+    return schema.validate(data)
+}

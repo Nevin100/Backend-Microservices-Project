@@ -1,3 +1,8 @@
 {"level":"info","message":"API Gateway is running on port 3000","service":"api-gateway","timestamp":"2026-02-15T11:52:34.123Z"}
 {"level":"info","message":"User Service is running on http://localhost:3001","service":"api-gateway","timestamp":"2026-02-15T11:52:34.135Z"}
 {"level":"info","message":"Redis is running on redis://localhost:6379","service":"api-gateway","timestamp":"2026-02-15T11:52:34.136Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"api-gateway","timestamp":"2026-02-15T11:52:46.804Z"}
+{"level":"info","message":"User Service is running on http://localhost:3001","service":"api-gateway","timestamp":"2026-02-15T11:52:46.877Z"}
+{"level":"info","message":"Redis is running on redis://localhost:6379","service":"api-gateway","timestamp":"2026-02-15T11:52:46.956Z"}
+{"level":"info","message":"Received request: POST /v1/auth/register from IP: ::1","service":"api-gateway","timestamp":"2026-02-15T11:54:53.905Z"}
+{"level":"info","message":"Received response from user service for POST /v1/auth/register with status 201","service":"api-gateway","timestamp":"2026-02-15T11:54:54.508Z"}

@@ -1,5 +1,5 @@
 import logger from "../Utils/logger.js";
-import {validateRegistration} from "../Utils/validation.js";
+import {validateRegistration, validateLogin} from "../Utils/validation.js";
 import User from "../models/User.js";
 import generateToken from "../Utils/generateToken.js"
 
@@ -12,7 +12,7 @@ export const resgisterUser = async(req,res) =>{
         // 1.) Validate Requested Data :
         const {error} = validateRegistration(req.body);
         if(error) {
-            logger.warn("Validation error", error.details[0].message);
+            logger.warn("Validation error in Registration", error.details[0].message);
             return res.status(400).json({
                 success: false,
                 message: error.details[0].message
@@ -27,7 +27,7 @@ export const resgisterUser = async(req,res) =>{
             logger.warn("User Already Exists");
             return res.status(400).json({
                 success: false,
-                message: "User lready Exists"
+                message: "User already Exists"
             })
         }
          
@@ -56,13 +56,65 @@ export const resgisterUser = async(req,res) =>{
         }
     } catch (error) {
         logger.error("Error occured in registeration", error)
-        res.status(500).json({success: false, message: "Internal Server Issue"});
+        res.status(500).json({success: false, message: "Internal Server Issue in Register"});
     }
 } 
 
-
 // User Logging In : 
+export const loginUser = async(req,res) =>{
+    logger.info('login Started :')
 
+    try{    
+        // 1.) Validate Requested Data :
+        const {error} = validateLogin(req.body);
+        if(error) {
+            logger.warn("Validation error in Login", error.details[0].message);
+            return res.status(400).json({
+                success: false,
+                message: error.details[0].message
+            });
+        }
+
+        const { email, password } = req.body;
+
+        // 2.) Check whether the user exists or not :
+        const existingUser = await User.findOne({email});
+        if (!existingUser) {
+            logger.warn("User Not Found");
+            return res.status(404).json({
+                success: false,
+                message: "User Not Found"
+            })
+        }
+
+        // 3.) Match the password :
+        const isPasswordMatch = await existingUser.comparepassword(password);
+        if(!isPasswordMatch){
+            logger.warn("Invalid Password");
+            return res.status(400).json({
+                success: false,
+                message: "Invalid Password Credential"
+            })
+        }
+
+        // 4.) Generate Refresh and AccessTokens:
+        const {accessToken, refreshToken} = await generateToken(existingUser)
+
+        if(accessToken && refreshToken){
+            res.status(200).json({
+                success: true,
+                message : "User Login Successful",
+                accessToken,
+                refreshToken,
+                userId : existingUser._id 
+            });
+        }
+
+    }catch(error){
+        logger.error("Error occured in login", error)
+        res.status(500).json({success: false, message: "Internal Server Issue in Login"});
+    }
+}
 
 
 // refresh token
