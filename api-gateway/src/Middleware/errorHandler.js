@@ -1,4 +1,4 @@
-import logger from "../Utils/logger";
+import logger from "../Utils/logger.js";
 
 const errorHandler = (err, req, res, next) =>{
     logger.error(err.stack);

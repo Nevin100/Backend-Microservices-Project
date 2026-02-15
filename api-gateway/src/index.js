@@ -9,7 +9,7 @@ import Redis from "ioredis";
 import helmet from "helmet";
 
 // Import custom logger from user service
-import logger from "../../user-service/src/Utils/logger";
+import logger from "./Utils/logger.js";
 
 // Import Redis store adapter for express-rate-limit
 import { RedisStore } from "rate-limit-redis";
@@ -21,7 +21,7 @@ import { rateLimit } from "express-rate-limit";
 import proxy from "express-http-proxy";
 
 // Import global error handling middleware
-import errorHandler from "./Middleware/errroHandler.js";
+import errorHandler from "./Middleware/errorHandler.js";
 
 // Initialize Express application
 const app = express();

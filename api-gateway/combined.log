@@ -1,0 +1,3 @@
+{"level":"info","message":"API Gateway is running on port 3000","service":"api-gateway","timestamp":"2026-02-15T11:52:34.123Z"}
+{"level":"info","message":"User Service is running on http://localhost:3001","service":"api-gateway","timestamp":"2026-02-15T11:52:34.135Z"}
+{"level":"info","message":"Redis is running on redis://localhost:6379","service":"api-gateway","timestamp":"2026-02-15T11:52:34.136Z"}
