@@ -14,7 +14,7 @@ import {RedisStore} from "rate-limit-redis";
 
 const app = express();
 const PORT = process.env.PORT;
-const redisClient = new Redis(process.env.REDIS_URL);
+export const redisClient = new Redis(process.env.REDIS_URL);
 
 // Middleware :
 app.use(helmet());

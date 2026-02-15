@@ -1,6 +1,7 @@
 import Post from "../Models/Post.js";
 import logger from "../Utils/logger.js";
 import {validateCreatePost} from "../Utils/validation.js";
+import {redisClient} from "../index.js";
 
 // Create Post :
 export const createPost = async(req,res) =>{
@@ -77,7 +78,7 @@ export const GetAllPosts = async(req,res) =>{
 
         // Get total count of posts for pagination metadata
         const totalPosts = await Post.countDocuments();
-        
+
         // Prepare the result with pagination metadata
         const result = {
             totalPosts,

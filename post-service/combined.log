@@ -53,3 +53,11 @@
 {"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-15T18:12:46.507Z"}
 {"level":"info","message":"Creation of Post Starting..","service":"post-service","timestamp":"2026-02-15T18:12:46.542Z"}
 {"level":"info","message":"Post created successfully with ID: 69920c9e09a2eb0184fb0c9b","service":"post-service","timestamp":"2026-02-15T18:12:46.643Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-15T18:24:07.084Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-15T18:24:07.641Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-15T18:26:33.854Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-15T18:26:34.519Z"}
+{"level":"info","message":"Incoming Request: GET of /api/posts/all","service":"post-service","timestamp":"2026-02-15T18:28:07.772Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-15T18:28:07.774Z"}
+{"level":"info","message":"Fetching All Posts Starting..","service":"post-service","timestamp":"2026-02-15T18:28:07.786Z"}
+{"level":"error","message":"Error in GetAllPosts: redisClient is not defined","service":"post-service","timestamp":"2026-02-15T18:28:07.788Z"}
