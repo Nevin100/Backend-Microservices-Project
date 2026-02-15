@@ -79,3 +79,7 @@
 {"level":"info","message":"Connected to MongoDB Database","service":"user-service","timestamp":"2026-02-15T12:50:14.560Z"}
 {"level":"info","message":"User-Service is running on port 3001","service":"user-service","timestamp":"2026-02-15T12:51:43.038Z"}
 {"level":"info","message":"Connected to MongoDB Database","service":"user-service","timestamp":"2026-02-15T12:51:43.632Z"}
+{"level":"info","message":"User-Service is running on port 3001","service":"user-service","timestamp":"2026-02-15T12:52:12.244Z"}
+{"level":"info","message":"Connected to MongoDB Database","service":"user-service","timestamp":"2026-02-15T12:52:12.835Z"}
+{"level":"info","message":"User-Service is running on port 3001","service":"user-service","timestamp":"2026-02-15T12:53:54.977Z"}
+{"level":"info","message":"Connected to MongoDB Database","service":"user-service","timestamp":"2026-02-15T12:53:55.560Z"}
