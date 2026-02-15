@@ -62,3 +62,20 @@
 {"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-15T12:15:05.788Z"}
 {"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-15T12:15:05.817Z"}
 {"level":"error","message":"Error occured in login existingUser.comparePassword is not a function","service":"user-service","stack":"TypeError: existingUser.comparePassword is not a function\n    at loginUser (file:///C:/Users/DELL/Desktop/VS%20CODE/microservices/user-service/src/Controllers/user.controllers.js:91:52)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2026-02-15T12:15:06.045Z"}
+{"level":"info","message":"User-Service is running on port 3001","service":"user-service","timestamp":"2026-02-15T12:15:45.850Z"}
+{"level":"info","message":"Connected to MongoDB Database","service":"user-service","timestamp":"2026-02-15T12:15:46.364Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-15T12:15:53.028Z"}
+{"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-15T12:15:53.031Z"}
+{"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-15T12:15:53.091Z"}
+{"level":"info","message":"User-Service is running on port 3001","service":"user-service","timestamp":"2026-02-15T12:31:22.849Z"}
+{"level":"info","message":"Connected to MongoDB Database","service":"user-service","timestamp":"2026-02-15T12:31:23.477Z"}
+{"level":"info","message":"User-Service is running on port 3001","service":"user-service","timestamp":"2026-02-15T12:31:47.958Z"}
+{"level":"info","message":"Connected to MongoDB Database","service":"user-service","timestamp":"2026-02-15T12:31:48.553Z"}
+{"level":"info","message":"User-Service is running on port 3001","service":"user-service","timestamp":"2026-02-15T12:38:53.285Z"}
+{"level":"info","message":"Connected to MongoDB Database","service":"user-service","timestamp":"2026-02-15T12:38:53.848Z"}
+{"level":"info","message":"User-Service is running on port 3001","service":"user-service","timestamp":"2026-02-15T12:50:04.966Z"}
+{"level":"info","message":"Connected to MongoDB Database","service":"user-service","timestamp":"2026-02-15T12:50:05.607Z"}
+{"level":"info","message":"User-Service is running on port 3001","service":"user-service","timestamp":"2026-02-15T12:50:13.866Z"}
+{"level":"info","message":"Connected to MongoDB Database","service":"user-service","timestamp":"2026-02-15T12:50:14.560Z"}
+{"level":"info","message":"User-Service is running on port 3001","service":"user-service","timestamp":"2026-02-15T12:51:43.038Z"}
+{"level":"info","message":"Connected to MongoDB Database","service":"user-service","timestamp":"2026-02-15T12:51:43.632Z"}

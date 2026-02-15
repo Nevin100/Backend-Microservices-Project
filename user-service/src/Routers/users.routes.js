@@ -1,5 +1,5 @@
 import express from "express";
-import {loginUser, resgisterUser} from "../Controllers/user.controllers.js";
+import {loginUser, logoutUser, resgisterUser} from "../Controllers/user.controllers.js";
 
 const router = express.Router();
 
@@ -12,7 +12,7 @@ router.post("/register", resgisterUser);
 router.post("/login", loginUser);
 
 // 3.) LogOut Route :
-
+router.post("/logout", logoutUser);
 
 export default router;
 
