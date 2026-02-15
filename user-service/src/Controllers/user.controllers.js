@@ -22,8 +22,8 @@ export const resgisterUser = async(req,res) =>{
         const {email, password, userName} = req.body;
         
         // 2.) Check whether the user exists or not :
-        const user = await User.findOne({$or : [{email}, {userName}]});
-        if (user) {
+        const existingUser = await User.findOne({$or : [{email}, {userName}]});
+        if (existingUser) {
             logger.warn("User Already Exists");
             return res.status(400).json({
                 success: false,
@@ -32,7 +32,7 @@ export const resgisterUser = async(req,res) =>{
         }
          
         // 3.) New User creation :
-        user = new User({
+        const user = new User({
             email,
             userName,
             password
@@ -55,7 +55,7 @@ export const resgisterUser = async(req,res) =>{
             });
         }
     } catch (error) {
-        logger.error("Errro occured in registeration", error)
+        logger.error("Error occured in registeration", error)
         res.status(500).json({success: false, message: "Internal Server Issue"});
     }
 } 

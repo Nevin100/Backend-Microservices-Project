@@ -12,3 +12,21 @@
 {"level":"info","message":"Connected to MongoDB Database","service":"user-service","timestamp":"2026-02-14T13:38:24.723Z"}
 {"level":"info","message":"User-Service is running on port 3001","service":"user-service","timestamp":"2026-02-14T13:39:27.648Z"}
 {"level":"info","message":"Connected to MongoDB Database","service":"user-service","timestamp":"2026-02-14T13:39:28.227Z"}
+{"level":"info","message":"User-Service is running on port 3001","service":"user-service","timestamp":"2026-02-15T11:10:13.739Z"}
+{"level":"info","message":"Connected to MongoDB Database","service":"user-service","timestamp":"2026-02-15T11:10:14.267Z"}
+{"level":"info","message":"Received POST request to /api/auth/register","service":"user-service","timestamp":"2026-02-15T11:11:41.812Z"}
+{"level":"info","message":"Request Body: {\"email\":\"Test100@gmail.com\",\"userName\":\"Test100\",\"password\":\"Test100?\"}","service":"user-service","timestamp":"2026-02-15T11:11:41.815Z"}
+{"level":"info","message":"registration Started :","service":"user-service","timestamp":"2026-02-15T11:11:41.847Z"}
+{"level":"error","message":"Errro occured in registeration Assignment to constant variable.","service":"user-service","stack":"TypeError: Assignment to constant variable.\n    at resgisterUser (file:///C:/Users/DELL/Desktop/VS%20CODE/microservices/user-service/src/Controllers/user.controllers.js:35:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2026-02-15T11:11:41.946Z"}
+{"level":"info","message":"Received POST request to /api/auth/register","service":"user-service","timestamp":"2026-02-15T11:13:20.500Z"}
+{"level":"info","message":"Request Body: {\"email\":\"Test100@gmail.com\",\"userName\":\"Test100\",\"password\":\"Test100?\"}","service":"user-service","timestamp":"2026-02-15T11:13:20.500Z"}
+{"level":"info","message":"registration Started :","service":"user-service","timestamp":"2026-02-15T11:13:20.506Z"}
+{"level":"error","message":"Errro occured in registeration Assignment to constant variable.","service":"user-service","stack":"TypeError: Assignment to constant variable.\n    at resgisterUser (file:///C:/Users/DELL/Desktop/VS%20CODE/microservices/user-service/src/Controllers/user.controllers.js:35:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2026-02-15T11:13:20.551Z"}
+{"level":"info","message":"User-Service is running on port 3001","service":"user-service","timestamp":"2026-02-15T11:14:16.837Z"}
+{"level":"info","message":"Connected to MongoDB Database","service":"user-service","timestamp":"2026-02-15T11:14:17.415Z"}
+{"level":"info","message":"Received POST request to /api/auth/register","service":"user-service","timestamp":"2026-02-15T11:14:22.154Z"}
+{"level":"info","message":"Request Body: {\"email\":\"Test100@gmail.com\",\"userName\":\"Test100\",\"password\":\"Test100?\"}","service":"user-service","timestamp":"2026-02-15T11:14:22.155Z"}
+{"level":"info","message":"registration Started :","service":"user-service","timestamp":"2026-02-15T11:14:22.184Z"}
+{"level":"error","message":"Errro occured in registeration user is not defined","service":"user-service","stack":"ReferenceError: user is not defined\n    at resgisterUser (file:///C:/Users/DELL/Desktop/VS%20CODE/microservices/user-service/src/Controllers/user.controllers.js:35:14)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)","timestamp":"2026-02-15T11:14:22.301Z"}
+{"level":"info","message":"User-Service is running on port 3001","service":"user-service","timestamp":"2026-02-15T11:14:47.999Z"}
+{"level":"info","message":"Connected to MongoDB Database","service":"user-service","timestamp":"2026-02-15T11:14:48.656Z"}
