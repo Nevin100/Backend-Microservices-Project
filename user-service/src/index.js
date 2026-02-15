@@ -1,4 +1,4 @@
-//Entry point of User Service (Microservice)
+// -> Entry point of User Service (Microservice)
 // Responsibilities:
 // Load environment variables
 // Initialize Express server
