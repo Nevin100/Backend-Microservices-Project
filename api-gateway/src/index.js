@@ -191,6 +191,38 @@ app.use(
     })
 );
 
+// Forward all "/v1/media" requests to MEDIA_SERVICE_URL
+app.use(
+    "/v1/media",
+    validateToken,
+    proxy(process.env.MEDIA_SERVICE_URL, { 
+        // Spread base proxy options
+        ...proxyOptions,
+        // Modify outgoing proxy request headers
+        proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
+            // Forward Authorization header from client to media service
+            proxyReqOpts.headers['x-user-id'] = srcReq.user.userId;
+            // If content type is multipart/form-data, change it to application/json for media service
+            if(srcReq.headers['content-type'].startsWith('multipart/form-data')) {
+                proxyReqOpts.headers['Content-Type'] = "application/json";
+            }
+            return proxyReqOpts;
+        },
+
+        // Intercept and log response from media service
+        userResDecorator: (proxyRes, proxyResData, userReq, userRes) => {
+
+            // Log response details
+            logger.info(
+                `Received response from media service for ${userReq.method} ${userReq.originalUrl} with status ${proxyRes.statusCode}`
+            );
+
+            // Return original response data
+            return proxyResData;
+        }
+    })
+);
+
 // Apply global error handling middleware
 app.use(errorHandler);
 
@@ -202,5 +234,6 @@ app.listen(PORT, () => {
     logger.info(`API Gateway is running on port ${PORT}`);
     logger.info(`User Service is running on ${process.env.USER_SERVICE_URL}`);
     logger.info(`Post Service is running on ${process.env.POST_SERVICE_URL}`);
+    logger.info(`Media Service is running on ${process.env.MEDIA_SERVICE_URL}`);
     logger.info(`Redis is running on ${process.env.REDIS_URL}`);
 });

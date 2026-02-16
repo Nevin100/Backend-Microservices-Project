@@ -1,0 +1,3 @@
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T15:39:00.241Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T15:39:00.257Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T15:39:00.843Z"}
