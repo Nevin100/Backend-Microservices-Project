@@ -3,6 +3,14 @@ import logger from "../Utils/logger.js";
 import {validateCreatePost} from "../Utils/validation.js";
 import {redisClient} from "../index.js";
 
+// Utility function to clear cache for posts
+async function clearCache(req, input) {
+    const keys = await redisClient.keys("posts:*");
+    if (keys.length > 0) {
+        await redisClient.del(...keys);
+    }
+}
+
 // Create Post :
 export const createPost = async(req,res) =>{
     logger.info('Creation of Post Starting..');
@@ -33,7 +41,10 @@ export const createPost = async(req,res) =>{
 
         const savedPost = await newPost.save();
 
-        // 5. Log the successful creation of the post and send a response
+        // 5. Clear the cache for posts to ensure the new post is reflected in subsequent fetches
+        await clearCache(req, newPost._id.toString());
+
+        // 6. Log the successful creation of the post and send a response
         logger.info(`Post created successfully with ID: ${savedPost._id}`);
         res.status(201).json({
             message: 'Post created successfully',
@@ -102,7 +113,7 @@ export const GetAllPosts = async(req,res) =>{
 
     } catch (error) {
         logger.error(`Error in GetAllPosts: ${error.message}`);
-        res.status(500).json({ error: 'Internal Server Error in Fetching All Posts' });
+        res.status(500).json({ success: false, error: 'Internal Server Error in Fetching All Posts' });
     }   
 };
 
@@ -110,10 +121,46 @@ export const GetAllPosts = async(req,res) =>{
 export const GetPostById = async(req,res) =>{
     logger.info('Fetching Post By Id Starting..');
     try {
-        
+        // 1. Extract the post ID from the request parameters
+        const postId = req.params.id;
+
+        // 2. Check if the post with the given ID is present in the cache
+        const cacheKey = `post:${postId}`;
+        const cachePost = await redisClient.get(cacheKey);
+
+        if(cachePost) {
+            logger.info(`Post fetched from cache for ID: ${postId}`);
+            return res.status(200).json({
+                message: 'Post fetched successfully from cache',
+                post: JSON.parse(cachePost),
+                error: false,
+                success: true
+            });
+        }
+
+        // 3. If not present in cache, fetch from database
+        const post = await Post.findById(postId);   
+
+        if(!post) {
+            logger.warn(`Post not found with ID: ${postId}`);
+            return res.status(404).json({ success: false, error: 'Post not found' });
+        }
+
+        //4. Store the post in cache for future requests
+        await redisClient.setex(cacheKey, 3600, JSON.stringify(post));
+
+        // 5. Log the successful fetching of the post and send a response
+        logger.info(`Post fetched successfully for ID: ${postId}`);
+        res.status(200).json({
+            message: 'Post fetched successfully',
+            post,
+            error: false,
+            success: true
+        });
+
     } catch (error) {
         logger.error(`Error in GetPostById: ${error.message}`);
-        res.status(500).json({ error: 'Internal Server Error in Fetching Post By Id' });
+        res.status(500).json({ success: false, error: 'Internal Server Error in Fetching Post By Id' });
     }
 };
 
@@ -123,16 +170,62 @@ export const UpdatePostById = async(req,res) =>{
     try {
     } catch (error) {
         logger.error(`Error in UpdatePostById: ${error.message}`);
-        res.status(500).json({ error: 'Internal Server Error in Updating Post By Id' });
+        res.status(500).json({ success: false, error: 'Internal Server Error in Updating Post By Id' });
     }
 };
 
 // Delete Post By Id :
-export const DeletePostById = async(req,res) =>{
+export const DeletePostById = async (req, res) => {
     logger.info('Deleting Post By Id Starting..');
+
     try {
+        const postId = req.params.id;
+
+        // 1. Validate Post ID
+        if (!postId) {
+            logger.warn('Post ID is missing in the request parameters');
+            return res.status(400).json({
+                success: false,
+                error: 'Post ID is required for deletion'
+            });
+        }
+
+        // 2. Delete from Database (only if user owns it)
+        const deletedPost = await Post.findOneAndDelete({
+            _id: postId,
+            user: req.user.userId
+        });
+
+        if (!deletedPost) {
+            logger.warn(`Post not found or unauthorized deletion attempt: ${postId}`);
+            return res.status(404).json({
+                success: false,
+                error: 'Post not found or unauthorized'
+            });
+        }
+
+        // 3. Delete Single Post Cache
+        const singlePostCacheKey = `post:${postId}`;
+        await redisClient.del(singlePostCacheKey);
+
+        // 4. Delete All Pagination Cache
+        await clearPostsCache();
+
+        logger.info(`Post deleted successfully with ID: ${postId}`);
+
+        return res.status(200).json({
+            success: true,
+            error: false,
+            message: 'Post deleted successfully',
+            post: deletedPost
+        });
+
     } catch (error) {
         logger.error(`Error in DeletePostById: ${error.message}`);
-        res.status(500).json({ error: 'Internal Server Error in Deleting Post By Id' });
+
+        return res.status(500).json({
+            success: false,
+            error: 'Internal Server Error in Deleting Post'
+        });
     }
 };

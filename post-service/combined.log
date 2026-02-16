@@ -92,3 +92,56 @@
 {"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-15T18:30:16.017Z"}
 {"level":"info","message":"Fetching All Posts Starting..","service":"post-service","timestamp":"2026-02-15T18:30:16.019Z"}
 {"level":"info","message":"Posts fetched from cache for page: 1 and limit: 10","service":"post-service","timestamp":"2026-02-15T18:30:16.023Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-16T03:02:10.314Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-16T03:02:10.902Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-16T03:05:58.276Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-16T03:05:58.856Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-16T03:10:34.335Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-16T03:10:35.113Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-16T03:19:09.441Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-16T03:19:10.078Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-16T03:19:24.470Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-16T03:19:25.713Z"}
+{"level":"info","message":"Incoming Request: GET of /api/posts/all","service":"post-service","timestamp":"2026-02-16T03:34:03.832Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-16T03:34:03.834Z"}
+{"level":"info","message":"Fetching All Posts Starting..","service":"post-service","timestamp":"2026-02-16T03:34:03.844Z"}
+{"level":"info","message":"Posts fetched from database and stored in cache for page: 1 and limit: 10","service":"post-service","timestamp":"2026-02-16T03:34:03.937Z"}
+{"level":"info","message":"Posts fetched successfully for page: 1 and limit: 10","service":"post-service","timestamp":"2026-02-16T03:34:03.938Z"}
+{"level":"info","message":"Incoming Request: GET of /api/posts/69920c9e09a2eb0184fb0c9b","service":"post-service","timestamp":"2026-02-16T03:34:25.176Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-16T03:34:25.177Z"}
+{"level":"info","message":"Fetching Post By Id Starting..","service":"post-service","timestamp":"2026-02-16T03:34:25.186Z"}
+{"level":"info","message":"Post fetched successfully for ID: 69920c9e09a2eb0184fb0c9b","service":"post-service","timestamp":"2026-02-16T03:34:25.229Z"}
+{"level":"info","message":"Incoming Request: GET of /api/posts/69920c9e09a2eb0184fb0c9b","service":"post-service","timestamp":"2026-02-16T03:34:31.377Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-16T03:34:31.378Z"}
+{"level":"info","message":"Fetching Post By Id Starting..","service":"post-service","timestamp":"2026-02-16T03:34:31.382Z"}
+{"level":"info","message":"Post fetched from cache for ID: 69920c9e09a2eb0184fb0c9b","service":"post-service","timestamp":"2026-02-16T03:34:31.384Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-16T03:58:35.724Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-16T03:58:36.281Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-16T03:59:10.848Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-16T03:59:11.354Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-16T03:59:33.285Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-16T03:59:34.105Z"}
+{"level":"info","message":"Incoming Request: DELETE of /api/posts/69920c9e09a2eb0184fb0c9b","service":"post-service","timestamp":"2026-02-16T04:02:27.799Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-16T04:02:27.800Z"}
+{"level":"info","message":"Deleting Post By Id Starting..","service":"post-service","timestamp":"2026-02-16T04:02:27.821Z"}
+{"level":"info","message":"Post deleted successfully with ID: 69920c9e09a2eb0184fb0c9b","service":"post-service","timestamp":"2026-02-16T04:02:27.880Z"}
+{"level":"info","message":"Incoming Request: GET of /api/posts/all","service":"post-service","timestamp":"2026-02-16T04:02:40.853Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-16T04:02:40.854Z"}
+{"level":"info","message":"Fetching All Posts Starting..","service":"post-service","timestamp":"2026-02-16T04:02:40.861Z"}
+{"level":"info","message":"Posts fetched from cache for page: 1 and limit: 10","service":"post-service","timestamp":"2026-02-16T04:02:40.864Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-16T04:08:24.911Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-16T04:08:25.418Z"}
+{"level":"info","message":"Incoming Request: DELETE of /api/posts/69920c9e09a2eb0184fb0c9b","service":"post-service","timestamp":"2026-02-16T04:08:53.774Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-16T04:08:53.776Z"}
+{"level":"info","message":"Deleting Post By Id Starting..","service":"post-service","timestamp":"2026-02-16T04:08:53.790Z"}
+{"level":"warn","message":"Post not found with ID: 69920c9e09a2eb0184fb0c9b","service":"post-service","timestamp":"2026-02-16T04:08:53.835Z"}
+{"level":"info","message":"Incoming Request: GET of /api/posts/all","service":"post-service","timestamp":"2026-02-16T04:09:01.896Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-16T04:09:01.897Z"}
+{"level":"info","message":"Fetching All Posts Starting..","service":"post-service","timestamp":"2026-02-16T04:09:01.903Z"}
+{"level":"info","message":"Posts fetched from cache for page: 1 and limit: 10","service":"post-service","timestamp":"2026-02-16T04:09:01.911Z"}
+{"level":"info","message":"Incoming Request: GET of /api/posts/69920c9e09a2eb0184fb0c9b","service":"post-service","timestamp":"2026-02-16T04:09:15.767Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-16T04:09:15.768Z"}
+{"level":"info","message":"Fetching Post By Id Starting..","service":"post-service","timestamp":"2026-02-16T04:09:15.774Z"}
+{"level":"warn","message":"Post not found with ID: 69920c9e09a2eb0184fb0c9b","service":"post-service","timestamp":"2026-02-16T04:09:15.812Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-16T12:36:35.334Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-16T12:36:36.065Z"}

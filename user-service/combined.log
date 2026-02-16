@@ -97,3 +97,17 @@
 {"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-15T18:27:26.447Z"}
 {"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-15T18:27:26.453Z"}
 {"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-15T18:27:26.462Z"}
+{"level":"info","message":"User-Service is running on port 3001","service":"user-service","timestamp":"2026-02-16T03:02:05.465Z"}
+{"level":"info","message":"Connected to MongoDB Database","service":"user-service","timestamp":"2026-02-16T03:02:06.112Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-16T03:32:41.855Z"}
+{"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-16T03:32:41.857Z"}
+{"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-16T03:32:41.882Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-16T04:00:16.753Z"}
+{"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-16T04:00:16.754Z"}
+{"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-16T04:00:16.762Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-16T04:02:03.334Z"}
+{"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-16T04:02:03.336Z"}
+{"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-16T04:02:03.344Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-16T04:08:33.745Z"}
+{"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-16T04:08:33.746Z"}
+{"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-16T04:08:33.758Z"}
