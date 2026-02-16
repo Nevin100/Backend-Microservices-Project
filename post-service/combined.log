@@ -175,3 +175,33 @@
 {"level":"info","message":"Posts fetched successfully for page: 1 and limit: 10","service":"post-service","timestamp":"2026-02-16T12:41:59.780Z"}
 {"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-16T12:48:26.614Z"}
 {"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-16T12:48:27.330Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-16T12:48:44.732Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-16T12:48:45.291Z"}
+{"level":"info","message":"Incoming Request: PUT of /api/posts/69931055d8a50ceb10c02e1d","service":"post-service","timestamp":"2026-02-16T12:51:04.280Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-16T12:51:04.293Z"}
+{"level":"info","message":"Updating Post By Id Starting..","service":"post-service","timestamp":"2026-02-16T12:51:04.364Z"}
+{"level":"warn","message":"Post not found or unauthorized update attempt: 69931055d8a50ceb10c02e1d","service":"post-service","timestamp":"2026-02-16T12:51:04.600Z"}
+{"level":"info","message":"Incoming Request: PUT of /api/posts/69931055d8a50ceb10c02e1d","service":"post-service","timestamp":"2026-02-16T12:52:29.625Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-16T12:52:29.630Z"}
+{"level":"info","message":"Updating Post By Id Starting..","service":"post-service","timestamp":"2026-02-16T12:52:29.646Z"}
+{"level":"warn","message":"Post not found or unauthorized update attempt: 69931055d8a50ceb10c02e1d","service":"post-service","timestamp":"2026-02-16T12:52:29.686Z"}
+{"level":"info","message":"Incoming Request: GET of /api/posts/69931055d8a50ceb10c02e1d","service":"post-service","timestamp":"2026-02-16T12:52:53.613Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-16T12:52:53.623Z"}
+{"level":"info","message":"Fetching Post By Id Starting..","service":"post-service","timestamp":"2026-02-16T12:52:53.665Z"}
+{"level":"warn","message":"Post not found with ID: 69931055d8a50ceb10c02e1d","service":"post-service","timestamp":"2026-02-16T12:52:53.872Z"}
+{"level":"info","message":"Incoming Request: POST of /api/posts/create-post","service":"post-service","timestamp":"2026-02-16T12:53:04.558Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-16T12:53:04.559Z"}
+{"level":"info","message":"Creation of Post Starting..","service":"post-service","timestamp":"2026-02-16T12:53:04.562Z"}
+{"level":"info","message":"Post created successfully with ID: 69931330c4b9d1f5ac2bcdc9","service":"post-service","timestamp":"2026-02-16T12:53:04.654Z"}
+{"level":"info","message":"Incoming Request: GET of /api/posts/69931330c4b9d1f5ac2bcdc9","service":"post-service","timestamp":"2026-02-16T12:53:18.429Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-16T12:53:18.430Z"}
+{"level":"info","message":"Fetching Post By Id Starting..","service":"post-service","timestamp":"2026-02-16T12:53:18.433Z"}
+{"level":"info","message":"Post fetched successfully for ID: 69931330c4b9d1f5ac2bcdc9","service":"post-service","timestamp":"2026-02-16T12:53:18.472Z"}
+{"level":"info","message":"Incoming Request: PUT of /api/posts/69931330c4b9d1f5ac2bcdc9","service":"post-service","timestamp":"2026-02-16T12:53:25.590Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-16T12:53:25.595Z"}
+{"level":"info","message":"Updating Post By Id Starting..","service":"post-service","timestamp":"2026-02-16T12:53:25.598Z"}
+{"level":"info","message":"Post updated successfully with ID: 69931330c4b9d1f5ac2bcdc9","service":"post-service","timestamp":"2026-02-16T12:53:25.635Z"}
+{"level":"info","message":"Incoming Request: GET of /api/posts/69931330c4b9d1f5ac2bcdc9","service":"post-service","timestamp":"2026-02-16T12:53:33.510Z"}
+{"level":"info","message":"Request Body, [object Object]","service":"post-service","timestamp":"2026-02-16T12:53:33.511Z"}
+{"level":"info","message":"Fetching Post By Id Starting..","service":"post-service","timestamp":"2026-02-16T12:53:33.515Z"}
+{"level":"info","message":"Post fetched successfully for ID: 69931330c4b9d1f5ac2bcdc9","service":"post-service","timestamp":"2026-02-16T12:53:33.548Z"}

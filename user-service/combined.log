@@ -111,3 +111,9 @@
 {"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-16T04:08:33.745Z"}
 {"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-16T04:08:33.746Z"}
 {"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-16T04:08:33.758Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-16T12:40:32.764Z"}
+{"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-16T12:40:32.765Z"}
+{"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-16T12:40:32.801Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-16T12:50:31.422Z"}
+{"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-16T12:50:31.424Z"}
+{"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-16T12:50:31.432Z"}

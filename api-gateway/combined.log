@@ -105,3 +105,33 @@
 {"level":"info","message":"Received response from post service for GET /v1/posts/all with status 200","service":"api-gateway","timestamp":"2026-02-16T04:09:01.922Z"}
 {"level":"info","message":"Received request: GET /v1/posts/69920c9e09a2eb0184fb0c9b from IP: ::1","service":"api-gateway","timestamp":"2026-02-16T04:09:15.759Z"}
 {"level":"info","message":"Received response from post service for GET /v1/posts/69920c9e09a2eb0184fb0c9b with status 404","service":"api-gateway","timestamp":"2026-02-16T04:09:15.815Z"}
+{"level":"info","message":"Received request: POST /v1/auth/login from IP: ::1","service":"api-gateway","timestamp":"2026-02-16T12:40:32.758Z"}
+{"level":"info","message":"Received response from user service for POST /v1/auth/login with status 200","service":"api-gateway","timestamp":"2026-02-16T12:40:33.448Z"}
+{"level":"info","message":"Received request: POST /v1/posts/create-post from IP: ::1","service":"api-gateway","timestamp":"2026-02-16T12:40:53.440Z"}
+{"level":"info","message":"Received response from post service for POST /v1/posts/create-post with status 201","service":"api-gateway","timestamp":"2026-02-16T12:40:53.611Z"}
+{"level":"info","message":"Received request: GET /v1/posts/all from IP: ::1","service":"api-gateway","timestamp":"2026-02-16T12:41:00.204Z"}
+{"level":"info","message":"Received response from post service for GET /v1/posts/all with status 200","service":"api-gateway","timestamp":"2026-02-16T12:41:00.319Z"}
+{"level":"info","message":"Received request: DELETE /v1/posts/69931055d8a50ceb10c02e1d from IP: ::1","service":"api-gateway","timestamp":"2026-02-16T12:41:35.039Z"}
+{"level":"info","message":"Received response from post service for DELETE /v1/posts/69931055d8a50ceb10c02e1d with status 200","service":"api-gateway","timestamp":"2026-02-16T12:41:35.106Z"}
+{"level":"info","message":"Received request: GET /v1/posts/69931055d8a50ceb10c02e1d from IP: ::1","service":"api-gateway","timestamp":"2026-02-16T12:41:52.429Z"}
+{"level":"info","message":"Received response from post service for GET /v1/posts/69931055d8a50ceb10c02e1d with status 404","service":"api-gateway","timestamp":"2026-02-16T12:41:52.494Z"}
+{"level":"info","message":"Received request: GET /v1/posts/all from IP: ::1","service":"api-gateway","timestamp":"2026-02-16T12:41:59.691Z"}
+{"level":"info","message":"Received response from post service for GET /v1/posts/all with status 200","service":"api-gateway","timestamp":"2026-02-16T12:41:59.783Z"}
+{"level":"info","message":"Received request: PUT /v1/posts/69920c9e09a2eb0184fb0c9b from IP: ::1","service":"api-gateway","timestamp":"2026-02-16T12:50:21.394Z"}
+{"level":"warn","message":"Invalid token provided!! Unauthorized access attempt.","service":"api-gateway","timestamp":"2026-02-16T12:50:21.403Z"}
+{"level":"info","message":"Received request: POST /v1/auth/login from IP: ::1","service":"api-gateway","timestamp":"2026-02-16T12:50:31.416Z"}
+{"level":"info","message":"Received response from user service for POST /v1/auth/login with status 200","service":"api-gateway","timestamp":"2026-02-16T12:50:31.941Z"}
+{"level":"info","message":"Received request: PUT /v1/posts/69931055d8a50ceb10c02e1d from IP: ::1","service":"api-gateway","timestamp":"2026-02-16T12:51:04.123Z"}
+{"level":"info","message":"Received response from post service for PUT /v1/posts/69931055d8a50ceb10c02e1d with status 404","service":"api-gateway","timestamp":"2026-02-16T12:51:04.638Z"}
+{"level":"info","message":"Received request: PUT /v1/posts/69931055d8a50ceb10c02e1d from IP: ::1","service":"api-gateway","timestamp":"2026-02-16T12:52:29.616Z"}
+{"level":"info","message":"Received response from post service for PUT /v1/posts/69931055d8a50ceb10c02e1d with status 404","service":"api-gateway","timestamp":"2026-02-16T12:52:29.730Z"}
+{"level":"info","message":"Received request: GET /v1/posts/69931055d8a50ceb10c02e1d from IP: ::1","service":"api-gateway","timestamp":"2026-02-16T12:52:53.603Z"}
+{"level":"info","message":"Received response from post service for GET /v1/posts/69931055d8a50ceb10c02e1d with status 404","service":"api-gateway","timestamp":"2026-02-16T12:52:53.909Z"}
+{"level":"info","message":"Received request: POST /v1/posts/create-post from IP: ::1","service":"api-gateway","timestamp":"2026-02-16T12:53:04.553Z"}
+{"level":"info","message":"Received response from post service for POST /v1/posts/create-post with status 201","service":"api-gateway","timestamp":"2026-02-16T12:53:04.657Z"}
+{"level":"info","message":"Received request: GET /v1/posts/69931330c4b9d1f5ac2bcdc9 from IP: ::1","service":"api-gateway","timestamp":"2026-02-16T12:53:18.419Z"}
+{"level":"info","message":"Received response from post service for GET /v1/posts/69931330c4b9d1f5ac2bcdc9 with status 200","service":"api-gateway","timestamp":"2026-02-16T12:53:18.475Z"}
+{"level":"info","message":"Received request: PUT /v1/posts/69931330c4b9d1f5ac2bcdc9 from IP: ::1","service":"api-gateway","timestamp":"2026-02-16T12:53:25.583Z"}
+{"level":"info","message":"Received response from post service for PUT /v1/posts/69931330c4b9d1f5ac2bcdc9 with status 200","service":"api-gateway","timestamp":"2026-02-16T12:53:25.639Z"}
+{"level":"info","message":"Received request: GET /v1/posts/69931330c4b9d1f5ac2bcdc9 from IP: ::1","service":"api-gateway","timestamp":"2026-02-16T12:53:33.505Z"}
+{"level":"info","message":"Received response from post service for GET /v1/posts/69931330c4b9d1f5ac2bcdc9 with status 200","service":"api-gateway","timestamp":"2026-02-16T12:53:33.553Z"}
