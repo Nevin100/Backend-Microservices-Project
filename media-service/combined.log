@@ -168,3 +168,6 @@
 {"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T19:17:31.451Z"}
 {"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T19:17:31.463Z"}
 {"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T19:17:32.076Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T19:18:01.841Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T19:18:01.881Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T19:18:02.599Z"}
