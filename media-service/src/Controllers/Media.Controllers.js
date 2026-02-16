@@ -38,6 +38,7 @@ export const uploadMedia = async (req, res) => {
         // 6. Respond with success and media details
         logger.info(`Media details saved to database with ID: ${newlyCreatedMedia._id}`);
         res.status(200).json({ 
+            message : 'Media uploaded successfully and details saved to database',
             success: true, 
             mediaId: newlyCreatedMedia._id, 
             url: newlyCreatedMedia.url });

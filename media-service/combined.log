@@ -155,3 +155,16 @@
 {"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T19:14:53.434Z"}
 {"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T19:14:53.502Z"}
 {"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T19:14:57.593Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T19:15:05.171Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T19:15:05.184Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T19:15:05.901Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T19:15:10.898Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T19:15:10.904Z"}
+{"level":"info","message":"Received request to upload media","service":"media-service","timestamp":"2026-02-16T19:15:10.934Z"}
+{"level":"info","message":"File details - Name: Birbal.jpg, Type: image/jpeg, Size: 44607","service":"media-service","timestamp":"2026-02-16T19:15:10.937Z"}
+{"level":"info","message":"Uploading media to Cloudinary","service":"media-service","timestamp":"2026-02-16T19:15:10.954Z"}
+{"level":"info","message":"Media uploaded successfully: msze8pwsyofh3yflexip","service":"media-service","timestamp":"2026-02-16T19:15:12.519Z"}
+{"level":"info","message":"Media details saved to database with ID: 69936cc0265a9f0d312000cf","service":"media-service","timestamp":"2026-02-16T19:15:12.615Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T19:17:31.451Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T19:17:31.463Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T19:17:32.076Z"}

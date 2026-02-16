@@ -123,3 +123,30 @@
 {"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-16T15:54:13.124Z"}
 {"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-16T15:54:13.144Z"}
 {"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-16T15:54:13.159Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-16T18:23:56.677Z"}
+{"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-16T18:23:56.680Z"}
+{"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-16T18:23:56.686Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-16T18:31:33.843Z"}
+{"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-16T18:31:33.844Z"}
+{"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-16T18:31:33.857Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-16T18:36:44.469Z"}
+{"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-16T18:36:44.470Z"}
+{"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-16T18:36:44.473Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-16T18:44:16.397Z"}
+{"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-16T18:44:16.403Z"}
+{"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-16T18:44:16.464Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-16T18:50:15.023Z"}
+{"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-16T18:50:15.025Z"}
+{"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-16T18:50:15.031Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-16T18:50:46.756Z"}
+{"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-16T18:50:46.756Z"}
+{"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-16T18:50:46.760Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-16T18:57:07.964Z"}
+{"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-16T18:57:07.967Z"}
+{"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-16T18:57:07.970Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-16T19:04:28.301Z"}
+{"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-16T19:04:28.302Z"}
+{"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-16T19:04:28.305Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-16T19:11:11.661Z"}
+{"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-16T19:11:11.662Z"}
+{"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-16T19:11:11.668Z"}
