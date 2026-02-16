@@ -8,13 +8,13 @@ export const uploadMedia = async (req, res) => {
     try {
         // 1. Validate the file
         if(!req.file){
-            logger.warn('No file provided in the request');
+            logger.warn('No file provided in the request from media controller');
             return res.status(400).json({ success: false, error: 'No file provided' });
         }
 
         // 2. Extract file details
         const {originalname, mimetype, buffer} = req.file;
-        const userId = req.user.id;
+        const userID = req.user.userId;
 
         // 3. Log file details
         logger.info("File details - Name: " + originalname + ", Type: " + mimetype + ", Size: " + buffer.length);
@@ -27,10 +27,10 @@ export const uploadMedia = async (req, res) => {
         logger.info(`Media uploaded successfully: ${result.public_id}`);
         const newlyCreatedMedia = new Media({
             publicId: result.public_id,
-            originalname: originalname,
-            mimetype: mimetype,
+            originalName: originalname,
+            mimeType: mimetype,
             url: result.secure_url,
-            userId: userId
+            userId: userID
         });
 
         await newlyCreatedMedia.save();

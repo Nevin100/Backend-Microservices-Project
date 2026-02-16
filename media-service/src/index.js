@@ -14,12 +14,11 @@ const PORT = process.env.PORT;
 // Middleware setup
 app.use(helmet());
 app.use(cors());
-app.use(express.json());
 
 // Middleware for logging requests
 app.use((req, res, next) =>{
     logger.info(`Received ${req.method} request for ${req.url}`);
-    logger.info(`Request body: ${JSON.stringify(req.body)}`);
+    logger.info(`Request body: ${req.body}`);
     next();
 })
 

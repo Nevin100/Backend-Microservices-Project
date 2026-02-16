@@ -1,3 +1,157 @@
 {"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T15:39:00.241Z"}
 {"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T15:39:00.257Z"}
 {"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T15:39:00.843Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T15:39:13.633Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T15:39:13.643Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T15:39:14.307Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T15:52:39.584Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T15:52:39.594Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T15:52:40.148Z"}
+{"level":"error","message":"SyntaxError: Unexpected token '-', \"----------\"... is not valid JSON\n    at JSON.parse (<anonymous>)\n    at createStrictSyntaxError (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\body-parser\\lib\\types\\json.js:109:10)\n    at parse (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\body-parser\\lib\\types\\json.js:66:15)\n    at C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\body-parser\\lib\\read.js:162:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n    at invokeCallback (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:508:28)\n    at endReadableNT (node:internal/streams/readable:1701:12)","service":"media-service","timestamp":"2026-02-16T15:54:30.866Z"}
+{"level":"error","message":"SyntaxError: Unexpected token '-', \"----------\"... is not valid JSON\n    at JSON.parse (<anonymous>)\n    at createStrictSyntaxError (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\body-parser\\lib\\types\\json.js:109:10)\n    at parse (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\body-parser\\lib\\types\\json.js:66:15)\n    at C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\body-parser\\lib\\read.js:162:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n    at invokeCallback (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:508:28)\n    at endReadableNT (node:internal/streams/readable:1701:12)","service":"media-service","timestamp":"2026-02-16T15:55:00.355Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T18:23:48.199Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T18:23:48.217Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T18:23:48.806Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T18:24:14.995Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T18:24:14.998Z"}
+{"level":"warn","message":"No file was uploaded","service":"media-service","timestamp":"2026-02-16T18:24:15.005Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T18:24:36.574Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T18:24:36.576Z"}
+{"level":"warn","message":"No file was uploaded","service":"media-service","timestamp":"2026-02-16T18:24:36.578Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T18:25:23.440Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T18:25:23.441Z"}
+{"level":"warn","message":"No file was uploaded","service":"media-service","timestamp":"2026-02-16T18:25:23.443Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T18:28:41.794Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T18:28:41.809Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T18:28:42.451Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T18:28:45.355Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T18:28:45.357Z"}
+{"level":"warn","message":"No file was uploaded","service":"media-service","timestamp":"2026-02-16T18:28:45.362Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T18:31:49.374Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T18:31:49.376Z"}
+{"level":"warn","message":"Multer error during file upload: Unexpected field","service":"media-service","timestamp":"2026-02-16T18:31:49.395Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T18:33:31.137Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T18:33:31.140Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T18:34:24.752Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T18:34:24.754Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T18:37:02.803Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T18:37:02.804Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T18:40:28.836Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T18:40:28.841Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T18:44:01.849Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T18:44:01.858Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T18:44:02.457Z"}
+{"level":"error","message":"PayloadTooLargeError: request entity too large\n    at readStream (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\raw-body\\index.js:163:17)\n    at getRawBody (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\raw-body\\index.js:116:12)\n    at read (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\body-parser\\lib\\read.js:113:3)\n    at jsonParser (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\body-parser\\lib\\types\\json.js:88:5)\n    at Layer.handleRequest (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at trimPrefix (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\router\\index.js:342:13)\n    at C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\router\\index.js:297:9\n    at processParams (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\router\\index.js:582:12)\n    at next (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\router\\index.js:291:5)\n    at cors (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\cors\\lib\\index.js:188:7)","service":"media-service","timestamp":"2026-02-16T18:44:29.315Z"}
+{"level":"error","message":"SyntaxError: Unexpected token '-', \"----------\"... is not valid JSON\n    at JSON.parse (<anonymous>)\n    at createStrictSyntaxError (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\body-parser\\lib\\types\\json.js:109:10)\n    at parse (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\body-parser\\lib\\types\\json.js:66:15)\n    at C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\body-parser\\lib\\read.js:162:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)\n    at invokeCallback (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\DELL\\Desktop\\VS CODE\\microservices\\media-service\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:508:28)\n    at endReadableNT (node:internal/streams/readable:1701:12)","service":"media-service","timestamp":"2026-02-16T18:44:54.151Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T18:45:25.687Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T18:45:25.718Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T18:45:26.238Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T18:45:32.068Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T18:45:32.070Z"}
+{"level":"warn","message":"No file was uploaded","service":"media-service","timestamp":"2026-02-16T18:45:32.076Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T18:45:41.532Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T18:45:41.534Z"}
+{"level":"warn","message":"No file was uploaded","service":"media-service","timestamp":"2026-02-16T18:45:41.537Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T18:45:57.985Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T18:45:57.987Z"}
+{"level":"warn","message":"No file was uploaded","service":"media-service","timestamp":"2026-02-16T18:45:57.990Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T18:46:13.910Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T18:46:13.912Z"}
+{"level":"warn","message":"No file was uploaded","service":"media-service","timestamp":"2026-02-16T18:46:13.915Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T18:46:38.018Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T18:46:38.028Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T18:46:38.961Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T18:46:41.621Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T18:46:41.625Z"}
+{"level":"warn","message":"No file was uploaded","service":"media-service","timestamp":"2026-02-16T18:46:41.634Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T18:47:02.656Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T18:47:02.658Z"}
+{"level":"warn","message":"No file was uploaded","service":"media-service","timestamp":"2026-02-16T18:47:02.660Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T18:51:03.686Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T18:51:03.690Z"}
+{"level":"warn","message":"No file was uploaded","service":"media-service","timestamp":"2026-02-16T18:51:03.695Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T18:51:17.035Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T18:51:17.036Z"}
+{"level":"warn","message":"No file was uploaded","service":"media-service","timestamp":"2026-02-16T18:51:17.038Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T18:55:01.635Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T18:55:01.644Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T18:55:02.267Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T18:55:07.337Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T18:55:07.341Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T18:56:51.194Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T18:56:51.214Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T18:56:52.102Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T18:57:22.817Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T18:57:22.818Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T18:58:48.239Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T18:58:48.254Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T18:58:48.848Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T18:58:52.076Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T18:58:52.078Z"}
+{"level":"info","message":"Received request to upload media","service":"media-service","timestamp":"2026-02-16T18:58:52.089Z"}
+{"level":"warn","message":"No file provided in the request","service":"media-service","timestamp":"2026-02-16T18:58:52.090Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T18:59:34.223Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T18:59:34.238Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T18:59:34.857Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T18:59:37.962Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T18:59:37.964Z"}
+{"level":"info","message":"Received request to upload media","service":"media-service","timestamp":"2026-02-16T18:59:37.976Z"}
+{"level":"warn","message":"No file provided in the request from media controller","service":"media-service","timestamp":"2026-02-16T18:59:37.977Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T19:01:27.558Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T19:01:27.568Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T19:01:28.077Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T19:01:31.435Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T19:01:31.437Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T19:04:23.123Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T19:04:23.131Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T19:04:23.684Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T19:04:42.775Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T19:04:42.776Z"}
+{"level":"info","message":"Received request to upload media","service":"media-service","timestamp":"2026-02-16T19:04:42.807Z"}
+{"level":"info","message":"File details - Name: Birbal.jpg, Type: image/jpeg, Size: 44607","service":"media-service","timestamp":"2026-02-16T19:04:42.810Z"}
+{"level":"info","message":"Uploading media to Cloudinary","service":"media-service","timestamp":"2026-02-16T19:04:42.812Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T19:08:30.423Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T19:08:30.468Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T19:08:31.240Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T19:08:49.320Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T19:08:49.330Z"}
+{"level":"info","message":"Received request to upload media","service":"media-service","timestamp":"2026-02-16T19:08:49.364Z"}
+{"level":"info","message":"File details - Name: Birbal.jpg, Type: image/jpeg, Size: 44607","service":"media-service","timestamp":"2026-02-16T19:08:49.366Z"}
+{"level":"info","message":"Uploading media to Cloudinary","service":"media-service","timestamp":"2026-02-16T19:08:49.367Z"}
+{"level":"error","message":"Error uploading media in Media Service TypeError: Cannot read properties of undefined (reading 'upload_stream')","service":"media-service","timestamp":"2026-02-16T19:08:49.369Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T19:09:11.865Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T19:09:11.867Z"}
+{"level":"info","message":"Received request to upload media","service":"media-service","timestamp":"2026-02-16T19:09:11.874Z"}
+{"level":"info","message":"File details - Name: Birbal.jpg, Type: image/jpeg, Size: 44607","service":"media-service","timestamp":"2026-02-16T19:09:11.874Z"}
+{"level":"info","message":"Uploading media to Cloudinary","service":"media-service","timestamp":"2026-02-16T19:09:11.877Z"}
+{"level":"error","message":"Error uploading media in Media Service TypeError: Cannot read properties of undefined (reading 'upload_stream')","service":"media-service","timestamp":"2026-02-16T19:09:11.878Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T19:10:40.323Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T19:10:40.335Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T19:10:40.892Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T19:11:28.858Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T19:11:28.862Z"}
+{"level":"info","message":"Received request to upload media","service":"media-service","timestamp":"2026-02-16T19:11:28.898Z"}
+{"level":"info","message":"File details - Name: Birbal.jpg, Type: image/jpeg, Size: 44607","service":"media-service","timestamp":"2026-02-16T19:11:28.901Z"}
+{"level":"info","message":"Uploading media to Cloudinary","service":"media-service","timestamp":"2026-02-16T19:11:28.903Z"}
+{"level":"info","message":"Media uploaded successfully: um8bpdohgeevk2nsy5qy","service":"media-service","timestamp":"2026-02-16T19:11:30.546Z"}
+{"level":"error","message":"Error uploading media in Media Service ValidationError: userId: Path `userId` is required.","service":"media-service","timestamp":"2026-02-16T19:11:30.572Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T19:13:22.267Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T19:13:22.268Z"}
+{"level":"info","message":"Received request to upload media","service":"media-service","timestamp":"2026-02-16T19:13:22.272Z"}
+{"level":"info","message":"File details - Name: Birbal.jpg, Type: image/jpeg, Size: 44607","service":"media-service","timestamp":"2026-02-16T19:13:22.273Z"}
+{"level":"info","message":"Uploading media to Cloudinary","service":"media-service","timestamp":"2026-02-16T19:13:22.274Z"}
+{"level":"info","message":"Media uploaded successfully: bnrc23zqjxfb3q6it8fd","service":"media-service","timestamp":"2026-02-16T19:13:24.550Z"}
+{"level":"error","message":"Error uploading media in Media Service ValidationError: userId: Path `userId` is required.","service":"media-service","timestamp":"2026-02-16T19:13:24.553Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T19:14:04.704Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T19:14:04.714Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T19:14:05.276Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-16T19:14:09.141Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-16T19:14:09.143Z"}
+{"level":"info","message":"Received request to upload media","service":"media-service","timestamp":"2026-02-16T19:14:09.164Z"}
+{"level":"info","message":"File details - Name: Birbal.jpg, Type: image/jpeg, Size: 44607","service":"media-service","timestamp":"2026-02-16T19:14:09.165Z"}
+{"level":"info","message":"Uploading media to Cloudinary","service":"media-service","timestamp":"2026-02-16T19:14:09.166Z"}
+{"level":"info","message":"Media uploaded successfully: bvxaotsvqgr61ko8kxqz","service":"media-service","timestamp":"2026-02-16T19:14:10.740Z"}
+{"level":"error","message":"Error uploading media in Media Service ValidationError: userId: Path `userId` is required.","service":"media-service","timestamp":"2026-02-16T19:14:10.763Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T19:14:53.434Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T19:14:53.502Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T19:14:57.593Z"}

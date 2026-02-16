@@ -41,10 +41,6 @@ app.use(helmet());
 // Enable Cross-Origin Resource Sharing
 app.use(cors());
 
-// Parse incoming JSON requests
-app.use(express.json());
-
-
 // Configure rate limiting middleware
 const rateLimiter = rateLimit({
 
@@ -125,11 +121,12 @@ const proxyOptions = {
     }
 };
 
+// Proxy configuration for all microservices can be defined here and spread into individual proxy calls for consistency
 
 // Forward all '/v1/auth' requests to USER_SERVICE_URL
 app.use(
     "/v1/auth",
-    proxy(process.env.USER_SERVICE_URL, {
+    proxy(process.env.USER_SERVICE_URL, { 
 
         // Spread base proxy options
         ...proxyOptions,
@@ -160,6 +157,7 @@ app.use(
 // Forward all '/v1/posts' requests to POST_SERVICE_URL
 app.use(
     "/v1/posts",
+    express.json(), // Parse JSON bodies for post service routes
     validateToken,
     proxy(process.env.POST_SERVICE_URL, {
 
@@ -202,10 +200,6 @@ app.use(
         proxyReqOptDecorator: (proxyReqOpts, srcReq) => {
             // Forward Authorization header from client to media service
             proxyReqOpts.headers['x-user-id'] = srcReq.user.userId;
-            // If content type is multipart/form-data, change it to application/json for media service
-            if(srcReq.headers['content-type'].startsWith('multipart/form-data')) {
-                proxyReqOpts.headers['Content-Type'] = "application/json";
-            }
             return proxyReqOpts;
         },
 
@@ -219,7 +213,8 @@ app.use(
 
             // Return original response data
             return proxyResData;
-        }
+        },
+        parseReqBody : false // Disable body parsing for media service to handle multipart/form-data correctly
     })
 );
 
