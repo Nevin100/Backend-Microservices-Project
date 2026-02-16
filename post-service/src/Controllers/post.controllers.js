@@ -1,6 +1,6 @@
 import Post from "../Models/Post.js";
 import logger from "../Utils/logger.js";
-import {validateCreatePost} from "../Utils/validation.js";
+import {validateCreatePost, validateUpdatePost} from "../Utils/validation.js";
 import {redisClient} from "../index.js";
 
 // Utility function to clear cache for posts
@@ -168,6 +168,48 @@ export const GetPostById = async(req,res) =>{
 export const UpdatePostById = async(req,res) =>{
     logger.info('Updating Post By Id Starting..');
     try {
+        const postId = req.params.id;
+
+        // 1. Validate the request body
+        const {error} = validateUpdatePost(req.body);
+        if (error) {
+              logger.warn("Validation error in Update Post By Id", error.details[0].message);
+              return res.status(400).json({
+                success: false,
+                message: error.details[0].message,
+              });
+            }
+        // 2. Extract content and mediaUrls from the request body
+        const { content, mediaUrls } = req.body;
+
+        // 3. Find the post by ID and update it (only if user owns it)
+        const updatedPost = await Post.findOneAndUpdate(
+            { _id: postId, user: req.user.userId },
+            { content, mediaUrls: mediaUrls || [] },
+            { new: true }
+        );
+
+        if (!updatedPost) {
+            logger.warn(`Post not found or unauthorized update attempt: ${postId}`);
+            return res.status(404).json({
+                success: false,
+                error: 'Post not found or unauthorized'
+            });
+        }
+
+        // 4. Clear the cache for the updated post and all pagination cache
+        const singlePostCacheKey = `post:${postId}`;
+        await redisClient.del(singlePostCacheKey);
+        await clearCache();
+
+        // 5. Log the successful update of the post and send a response
+        logger.info(`Post updated successfully with ID: ${postId}`);
+        res.status(200).json({
+            message: 'Post updated successfully',
+            post: updatedPost,
+            error: false,
+            success: true
+        });
     } catch (error) {
         logger.error(`Error in UpdatePostById: ${error.message}`);
         res.status(500).json({ success: false, error: 'Internal Server Error in Updating Post By Id' });
@@ -209,7 +251,7 @@ export const DeletePostById = async (req, res) => {
         await redisClient.del(singlePostCacheKey);
 
         // 4. Delete All Pagination Cache
-        await clearPostsCache();
+        await clearCache();
 
         logger.info(`Post deleted successfully with ID: ${postId}`);
 
