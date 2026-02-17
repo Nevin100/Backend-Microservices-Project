@@ -171,3 +171,21 @@
 {"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T19:18:01.841Z"}
 {"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T19:18:01.881Z"}
 {"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T19:18:02.599Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-16T19:18:44.583Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-16T19:18:44.594Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-16T19:18:45.235Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-17T02:48:08.996Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-17T02:48:09.010Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-17T02:48:09.622Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-17T02:48:55.569Z"}
+{"level":"info","message":"Connecting to MongoDB...","service":"media-service","timestamp":"2026-02-17T02:48:55.579Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-17T02:48:56.084Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-17T02:49:04.484Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-17T02:49:05.012Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-17T02:51:22.373Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-17T02:51:22.375Z"}
+{"level":"info","message":"Received request to upload media","service":"media-service","timestamp":"2026-02-17T02:51:22.395Z"}
+{"level":"info","message":"File details - Name: birbalBoy.jpg, Type: image/jpeg, Size: 38899","service":"media-service","timestamp":"2026-02-17T02:51:22.396Z"}
+{"level":"info","message":"Uploading media to Cloudinary","service":"media-service","timestamp":"2026-02-17T02:51:22.398Z"}
+{"level":"info","message":"Media uploaded successfully: wezhayrq5gsibuz920lu","service":"media-service","timestamp":"2026-02-17T02:51:24.055Z"}
+{"level":"info","message":"Media details saved to database with ID: 6993d7acd89aad4bb23522c5","service":"media-service","timestamp":"2026-02-17T02:51:24.170Z"}

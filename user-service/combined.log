@@ -150,3 +150,8 @@
 {"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-16T19:11:11.661Z"}
 {"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-16T19:11:11.662Z"}
 {"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-16T19:11:11.668Z"}
+{"level":"info","message":"User-Service is running on port 3001","service":"user-service","timestamp":"2026-02-17T02:47:51.006Z"}
+{"level":"info","message":"Connected to MongoDB Database","service":"user-service","timestamp":"2026-02-17T02:47:51.501Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-17T02:50:42.265Z"}
+{"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-17T02:50:42.266Z"}
+{"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-17T02:50:42.315Z"}

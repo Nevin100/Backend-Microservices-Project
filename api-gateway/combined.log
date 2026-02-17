@@ -297,3 +297,12 @@
 {"level":"info","message":"Received response from media service for POST /v1/media/upload with status 500","service":"api-gateway","timestamp":"2026-02-16T19:14:10.776Z"}
 {"level":"info","message":"Received request: POST /v1/media/upload from IP: ::1","service":"api-gateway","timestamp":"2026-02-16T19:15:10.875Z"}
 {"level":"info","message":"Received response from media service for POST /v1/media/upload with status 200","service":"api-gateway","timestamp":"2026-02-16T19:15:12.630Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"api-gateway","timestamp":"2026-02-17T02:47:17.479Z"}
+{"level":"info","message":"User Service is running on http://localhost:3001","service":"api-gateway","timestamp":"2026-02-17T02:47:17.487Z"}
+{"level":"info","message":"Post Service is running on http://localhost:3002","service":"api-gateway","timestamp":"2026-02-17T02:47:17.488Z"}
+{"level":"info","message":"Media Service is running on http://localhost:3003","service":"api-gateway","timestamp":"2026-02-17T02:47:17.489Z"}
+{"level":"info","message":"Redis is running on redis://localhost:6379","service":"api-gateway","timestamp":"2026-02-17T02:47:17.490Z"}
+{"level":"info","message":"Received request: POST /v1/auth/login from IP: ::1","service":"api-gateway","timestamp":"2026-02-17T02:50:42.185Z"}
+{"level":"info","message":"Received response from user service for POST /v1/auth/login with status 200","service":"api-gateway","timestamp":"2026-02-17T02:50:42.776Z"}
+{"level":"info","message":"Received request: POST /v1/media/upload from IP: ::1","service":"api-gateway","timestamp":"2026-02-17T02:51:22.342Z"}
+{"level":"info","message":"Received response from media service for POST /v1/media/upload with status 200","service":"api-gateway","timestamp":"2026-02-17T02:51:24.180Z"}
