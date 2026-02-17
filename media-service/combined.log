@@ -189,3 +189,4 @@
 {"level":"info","message":"Uploading media to Cloudinary","service":"media-service","timestamp":"2026-02-17T02:51:22.398Z"}
 {"level":"info","message":"Media uploaded successfully: wezhayrq5gsibuz920lu","service":"media-service","timestamp":"2026-02-17T02:51:24.055Z"}
 {"level":"info","message":"Media details saved to database with ID: 6993d7acd89aad4bb23522c5","service":"media-service","timestamp":"2026-02-17T02:51:24.170Z"}
+{"level":"info","message":"Connected to RabbitMQ","service":"media-service","timestamp":"2026-02-17T19:22:50.240Z"}

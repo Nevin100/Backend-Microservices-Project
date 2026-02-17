@@ -27,6 +27,7 @@ const UploadMediaToCloudinary = async (file) => {
         uploadStream.end(file.buffer);
     })}
 
+// Function to delete media from Cloudinary by public ID 
 export const DeleteMediaCloudinary = async(publicId) =>{
     try {
         const result = await cloudinary.uploader.destroy(publicId);
