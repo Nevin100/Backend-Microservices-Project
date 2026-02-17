@@ -62,7 +62,26 @@ services:
       - REDIS_URL=redis://redis:6379
       - RABBITMQ_URL=amqp://rabbitmq:5672
 
-  # 4. Redis service
+  # 4. Media Service
+  media-service:
+    # Build the Media Service using the Dockerfile in the media-service directory
+    build: ./media-service
+
+    # environment variables for the Media Service
+    env_file:
+      - ./media-service/.env
+
+    # Media Service depends on MongoDB and RabbitMQ services
+    depends_on:
+      - redis
+      - rabbitmq
+
+    # Pass the Redis and RabbitMQ URLs as environment variables to the Media Service
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - RABBITMQ_URL=amqp://rabbitmq:5672
+
+  # 5. Redis service
   redis:  
     # Use the official Redis image from Docker Hub
     image: redis:alpine
@@ -71,7 +90,7 @@ services:
     ports:
       - "6379:6379"
 
-  # 5. RabbitMQ service
+  # 6. RabbitMQ service
   rabbitmq:
     # Use the official RabbitMQ image from Docker Hub
     image: rabbitmq:3-management
