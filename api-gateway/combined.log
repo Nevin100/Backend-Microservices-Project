@@ -335,3 +335,8 @@
 {"level":"info","message":"Received response from post service for DELETE /v1/posts/6994c2588b20afd4fd4594cd with status 200","service":"api-gateway","timestamp":"2026-02-17T19:33:53.779Z"}
 {"level":"info","message":"Received request: GET /v1/posts/all from IP: ::1","service":"api-gateway","timestamp":"2026-02-17T19:34:01.188Z"}
 {"level":"info","message":"Received response from post service for GET /v1/posts/all with status 200","service":"api-gateway","timestamp":"2026-02-17T19:34:01.284Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"api-gateway","timestamp":"2026-02-17T19:58:06.269Z"}
+{"level":"info","message":"User Service is running on http://localhost:3001","service":"api-gateway","timestamp":"2026-02-17T19:58:06.278Z"}
+{"level":"info","message":"Post Service is running on http://localhost:3002","service":"api-gateway","timestamp":"2026-02-17T19:58:06.279Z"}
+{"level":"info","message":"Media Service is running on http://localhost:3003","service":"api-gateway","timestamp":"2026-02-17T19:58:06.279Z"}
+{"level":"info","message":"Redis is running on redis://localhost:6379","service":"api-gateway","timestamp":"2026-02-17T19:58:06.280Z"}
