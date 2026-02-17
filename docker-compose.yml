@@ -1,0 +1,94 @@
+# version of docker-compose
+version: '3.8'
+
+# Define the services
+services:
+  # 1. API Gateway service
+  api-gateway:
+    # Build the API Gateway service using the Dockerfile in the api-gateway directory
+    build: ./api-gateway
+
+    # Map port 3000 of the container to port 3000 on the host
+    ports:
+      - "3000:3000" 
+
+    # environment variables for the API Gateway service
+    env_file:
+      - ./api-gateway/.env
+
+    # API Gateway service depends on Redis and RabbitMQ services
+    depends_on:
+      - redis
+      - rabbitmq
+
+    # Pass the Redis and RabbitMQ URLs as environment variables to the API Gateway service
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - RABBITMQ_URL=amqp://rabbitmq:5672
+
+  # 2. User Service
+  user-service:
+    # Build the User Service using the Dockerfile in the user-service directory
+    build: ./user-service
+
+    # environment variables for the User Service
+    env_file:
+      - ./user-service/.env
+
+    # User Service depends on MongoDB and RabbitMQ services
+    depends_on:
+      - redis
+      - rabbitmq
+
+    # Pass the Redis and RabbitMQ URLs as environment variables to the User Service
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - RABBITMQ_URL=amqp://rabbitmq:5672
+
+  # 3. Post Service
+  post-service: 
+    # Build the Post Service using the Dockerfile in the post-service directory
+    build: ./post-service
+
+    # environment variables for the Post Service
+    env_file:
+      - ./post-service/.env
+
+    # Post Service depends on MongoDB and RabbitMQ services
+    depends_on:
+      - redis
+      - rabbitmq
+
+    # Pass the Redis and RabbitMQ URLs as environment variables to the Post Service
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - RABBITMQ_URL=amqp://rabbitmq:5672
+
+  # 4. Redis service
+  redis:  
+    # Use the official Redis image from Docker Hub
+    image: redis:alpine
+
+    # Map port 6379 of the container to port 6379 on the host
+    ports:
+      - "6379:6379"
+
+  # 5. RabbitMQ service
+  rabbitmq:
+    # Use the official RabbitMQ image from Docker Hub
+    image: rabbitmq:3-management
+
+    # Map port 5672 of the container to port 5672 on the host for RabbitMQ communication
+    ports:
+      - "5672:5672"
+
+    # Map port 15672 of the container to port 15672 on the host for RabbitMQ management UI
+      - "15672:15672"
+
+    # Add a health check to ensure RabbitMQ is running before other services try to connect
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+  

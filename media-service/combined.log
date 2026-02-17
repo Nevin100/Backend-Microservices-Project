@@ -190,3 +190,23 @@
 {"level":"info","message":"Media uploaded successfully: wezhayrq5gsibuz920lu","service":"media-service","timestamp":"2026-02-17T02:51:24.055Z"}
 {"level":"info","message":"Media details saved to database with ID: 6993d7acd89aad4bb23522c5","service":"media-service","timestamp":"2026-02-17T02:51:24.170Z"}
 {"level":"info","message":"Connected to RabbitMQ","service":"media-service","timestamp":"2026-02-17T19:22:50.240Z"}
+{"level":"info","message":"Connected to RabbitMQ","service":"media-service","timestamp":"2026-02-17T19:24:09.672Z"}
+{"level":"info","message":"Media Service is running on port 3003","service":"media-service","timestamp":"2026-02-17T19:24:09.920Z"}
+{"level":"info","message":"Connected to MongoDB successfully","service":"media-service","timestamp":"2026-02-17T19:24:10.724Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-17T19:27:56.105Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-17T19:27:56.108Z"}
+{"level":"info","message":"Received request to upload media","service":"media-service","timestamp":"2026-02-17T19:27:56.110Z"}
+{"level":"warn","message":"No file provided in the request from media controller","service":"media-service","timestamp":"2026-02-17T19:27:56.111Z"}
+{"level":"info","message":"Received POST request for /api/media/upload","service":"media-service","timestamp":"2026-02-17T19:28:10.314Z"}
+{"level":"info","message":"Request body: undefined","service":"media-service","timestamp":"2026-02-17T19:28:10.316Z"}
+{"level":"info","message":"Received request to upload media","service":"media-service","timestamp":"2026-02-17T19:28:10.333Z"}
+{"level":"info","message":"File details - Name: dd-national.jpg, Type: image/jpeg, Size: 5706","service":"media-service","timestamp":"2026-02-17T19:28:10.334Z"}
+{"level":"info","message":"Uploading media to Cloudinary","service":"media-service","timestamp":"2026-02-17T19:28:10.336Z"}
+{"level":"info","message":"Media uploaded successfully: hslpx0cbmwqvbvormvqm","service":"media-service","timestamp":"2026-02-17T19:28:13.299Z"}
+{"level":"info","message":"Media details saved to database with ID: 6994c14dba8487898984e68d","service":"media-service","timestamp":"2026-02-17T19:28:13.373Z"}
+{"level":"info","message":{"mediaUrls":["6994c14dba8487898984e68d"],"postId":"6994c2588b20afd4fd4594cd","userId":"6991b40e2b6587a08af8c71f"},"service":"media-service","timestamp":"2026-02-17T19:33:53.785Z"}
+{"level":"info","message":"Handling post deleted event for post ID: 6994c2588b20afd4fd4594cd","service":"media-service","timestamp":"2026-02-17T19:33:53.810Z"}
+{"level":"info","message":"Media URLs to be deleted: 6994c14dba8487898984e68d","service":"media-service","timestamp":"2026-02-17T19:33:53.824Z"}
+{"level":"info","message":"Media with public ID hslpx0cbmwqvbvormvqm deleted from Cloudinary","service":"media-service","timestamp":"2026-02-17T19:33:56.491Z"}
+{"level":"info","message":"Deleted media with ID: 6994c14dba8487898984e68d from database and Cloudinary","service":"media-service","timestamp":"2026-02-17T19:33:56.529Z"}
+{"level":"info","message":"Successfully handled post deleted event","service":"media-service","timestamp":"2026-02-17T19:33:56.530Z"}

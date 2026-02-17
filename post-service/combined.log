@@ -263,3 +263,6 @@
 {"level":"info","message":"Fetching All Posts Starting..","service":"post-service","timestamp":"2026-02-17T19:34:01.203Z"}
 {"level":"info","message":"Posts fetched from database and stored in cache for page: 1 and limit: 10","service":"post-service","timestamp":"2026-02-17T19:34:01.280Z"}
 {"level":"info","message":"Posts fetched successfully for page: 1 and limit: 10","service":"post-service","timestamp":"2026-02-17T19:34:01.281Z"}
+{"level":"info","message":"Connected to RabbitMQ","service":"post-service","timestamp":"2026-02-17T19:37:31.296Z"}
+{"level":"info","message":"Post Service is running on port 3002","service":"post-service","timestamp":"2026-02-17T19:37:31.329Z"}
+{"level":"info","message":"Connected to MongoDB successfully from post-service","service":"post-service","timestamp":"2026-02-17T19:37:32.154Z"}

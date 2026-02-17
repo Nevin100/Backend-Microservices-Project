@@ -155,3 +155,14 @@
 {"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-17T02:50:42.265Z"}
 {"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-17T02:50:42.266Z"}
 {"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-17T02:50:42.315Z"}
+{"level":"info","message":"User-Service is running on port 3001","service":"user-service","timestamp":"2026-02-17T19:22:35.037Z"}
+{"level":"info","message":"Connected to MongoDB Database","service":"user-service","timestamp":"2026-02-17T19:22:35.631Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-17T19:26:16.153Z"}
+{"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-17T19:26:16.158Z"}
+{"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-17T19:26:16.211Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-17T19:31:57.685Z"}
+{"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-17T19:31:57.686Z"}
+{"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-17T19:31:57.694Z"}
+{"level":"info","message":"Received POST request to /api/auth/login","service":"user-service","timestamp":"2026-02-17T19:32:58.798Z"}
+{"level":"info","message":"Request Body: {\"email\":\"Test200@gmail.com\",\"password\":\"Test200?\"}","service":"user-service","timestamp":"2026-02-17T19:32:58.801Z"}
+{"level":"info","message":"login Started :","service":"user-service","timestamp":"2026-02-17T19:32:58.806Z"}

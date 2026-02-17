@@ -306,3 +306,32 @@
 {"level":"info","message":"Received response from user service for POST /v1/auth/login with status 200","service":"api-gateway","timestamp":"2026-02-17T02:50:42.776Z"}
 {"level":"info","message":"Received request: POST /v1/media/upload from IP: ::1","service":"api-gateway","timestamp":"2026-02-17T02:51:22.342Z"}
 {"level":"info","message":"Received response from media service for POST /v1/media/upload with status 200","service":"api-gateway","timestamp":"2026-02-17T02:51:24.180Z"}
+{"level":"info","message":"API Gateway is running on port 3000","service":"api-gateway","timestamp":"2026-02-17T19:22:01.387Z"}
+{"level":"info","message":"User Service is running on http://localhost:3001","service":"api-gateway","timestamp":"2026-02-17T19:22:01.405Z"}
+{"level":"info","message":"Post Service is running on http://localhost:3002","service":"api-gateway","timestamp":"2026-02-17T19:22:01.410Z"}
+{"level":"info","message":"Media Service is running on http://localhost:3003","service":"api-gateway","timestamp":"2026-02-17T19:22:01.412Z"}
+{"level":"info","message":"Redis is running on redis://localhost:6379","service":"api-gateway","timestamp":"2026-02-17T19:22:01.414Z"}
+{"level":"info","message":"Received request: POST /v1/auth/login from IP: ::1","service":"api-gateway","timestamp":"2026-02-17T19:26:16.047Z"}
+{"level":"info","message":"Received response from user service for POST /v1/auth/login with status 200","service":"api-gateway","timestamp":"2026-02-17T19:26:17.100Z"}
+{"level":"info","message":"Received request: POST /v1/media/upload from IP: ::1","service":"api-gateway","timestamp":"2026-02-17T19:27:56.068Z"}
+{"level":"info","message":"Received response from media service for POST /v1/media/upload with status 400","service":"api-gateway","timestamp":"2026-02-17T19:27:56.124Z"}
+{"level":"info","message":"Received request: POST /v1/media/upload from IP: ::1","service":"api-gateway","timestamp":"2026-02-17T19:28:10.303Z"}
+{"level":"info","message":"Received response from media service for POST /v1/media/upload with status 200","service":"api-gateway","timestamp":"2026-02-17T19:28:13.378Z"}
+{"level":"info","message":"Received request: POST /v1/posts/create-post from IP: ::1","service":"api-gateway","timestamp":"2026-02-17T19:31:11.666Z"}
+{"level":"info","message":"Received response from post service for POST /v1/posts/create-post with status 400","service":"api-gateway","timestamp":"2026-02-17T19:31:11.877Z"}
+{"level":"info","message":"Received request: POST /v1/posts/create-post from IP: ::1","service":"api-gateway","timestamp":"2026-02-17T19:31:49.460Z"}
+{"level":"warn","message":"Invalid token provided!! Unauthorized access attempt.","service":"api-gateway","timestamp":"2026-02-17T19:31:49.463Z"}
+{"level":"info","message":"Received request: POST /v1/auth/login from IP: ::1","service":"api-gateway","timestamp":"2026-02-17T19:31:57.678Z"}
+{"level":"info","message":"Received response from user service for POST /v1/auth/login with status 200","service":"api-gateway","timestamp":"2026-02-17T19:31:58.036Z"}
+{"level":"info","message":"Received request: POST /v1/posts/create-post from IP: ::1","service":"api-gateway","timestamp":"2026-02-17T19:32:14.292Z"}
+{"level":"info","message":"Received response from post service for POST /v1/posts/create-post with status 429","service":"api-gateway","timestamp":"2026-02-17T19:32:14.409Z"}
+{"level":"info","message":"Received request: POST /v1/posts/create-post from IP: ::1","service":"api-gateway","timestamp":"2026-02-17T19:32:40.361Z"}
+{"level":"info","message":"Received response from post service for POST /v1/posts/create-post with status 201","service":"api-gateway","timestamp":"2026-02-17T19:32:40.672Z"}
+{"level":"info","message":"Received request: POST /v1/auth/login from IP: ::1","service":"api-gateway","timestamp":"2026-02-17T19:32:58.789Z"}
+{"level":"info","message":"Received response from user service for POST /v1/auth/login with status 200","service":"api-gateway","timestamp":"2026-02-17T19:32:59.143Z"}
+{"level":"info","message":"Received request: GET /v1/posts/all from IP: ::1","service":"api-gateway","timestamp":"2026-02-17T19:33:15.113Z"}
+{"level":"info","message":"Received response from post service for GET /v1/posts/all with status 200","service":"api-gateway","timestamp":"2026-02-17T19:33:15.251Z"}
+{"level":"info","message":"Received request: DELETE /v1/posts/6994c2588b20afd4fd4594cd from IP: ::1","service":"api-gateway","timestamp":"2026-02-17T19:33:53.702Z"}
+{"level":"info","message":"Received response from post service for DELETE /v1/posts/6994c2588b20afd4fd4594cd with status 200","service":"api-gateway","timestamp":"2026-02-17T19:33:53.779Z"}
+{"level":"info","message":"Received request: GET /v1/posts/all from IP: ::1","service":"api-gateway","timestamp":"2026-02-17T19:34:01.188Z"}
+{"level":"info","message":"Received response from post service for GET /v1/posts/all with status 200","service":"api-gateway","timestamp":"2026-02-17T19:34:01.284Z"}
