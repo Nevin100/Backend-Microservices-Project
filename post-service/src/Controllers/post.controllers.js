@@ -1,5 +1,6 @@
 import Post from "../Models/Post.js";
 import logger from "../Utils/logger.js";
+import { publishEvent } from "../Utils/rabbitmq.js";
 import {validateCreatePost, validateUpdatePost} from "../Utils/validation.js";
 import {redisClient} from "../index.js";
 
@@ -245,6 +246,13 @@ export const DeletePostById = async (req, res) => {
                 error: 'Post not found or unauthorized'
             });
         }
+
+        // Publish an event to RabbitMQ for post deletion (if needed)
+        await publishEvent('post-deleted', {
+            postId: deletedPost._id,
+            userId: req.user.userId,
+            mediaUrls: deletedPost.mediaUrls
+        })
 
         // 3. Delete Single Post Cache
         const singlePostCacheKey = `post:${postId}`;

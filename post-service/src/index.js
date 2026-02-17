@@ -11,6 +11,7 @@ import connectDB from "./Utils/DB.js";
 import {RateLimiterRedis} from "rate-limiter-flexible";
 import {rateLimit} from "express-rate-limit";
 import {RedisStore} from "rate-limit-redis";
+import { connectRabbitMQ } from "./Utils/rabbitmq.js";
 
 const app = express();
 const PORT = process.env.PORT;
@@ -68,16 +69,25 @@ const sensitiveEndpointsLimiter = rateLimit({
     }),
 });
 
-// app.use("/api/posts/create-post", sensitiveEndpointsLimiter);
+app.use("/api/posts/create-post", sensitiveEndpointsLimiter);
 app.use("/api/posts",(req,res, next) =>{
     req.redisClient = redisClient;
     next();
 }, postRoutes);
 
-
 app.use(errorHandler);
 
-app.listen(PORT, () => {
-    logger.info(`Post Service is running on port ${PORT}`);
-    connectDB();
-});
+async function startServer(){
+    try {
+        await connectRabbitMQ();    
+        app.listen(PORT, () => {
+            logger.info(`Post Service is running on port ${PORT}`);
+            connectDB();
+        });
+    } catch (error) {
+        logger.error('Error starting server', { error });
+        process.exit(1);
+    }
+}
+
+startServer();
