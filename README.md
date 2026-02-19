@@ -13,8 +13,7 @@ This project consists of:
 ---
 
 # 🏗️ Architecture Overview
-<img width="1536" height="1024" alt="Microservice" src="https://github.com/user-attachments/assets/ed3ba104-b55c-45df-af68-99022c62cff3" />
-
+<img width="907" height="597" alt="image" src="https://github.com/user-attachments/assets/a3da4c35-880c-4780-9949-af7b94205b78" />
 
 - API Gateway handles routing & rate limiting
 - Services communicate via **RabbitMQ**
