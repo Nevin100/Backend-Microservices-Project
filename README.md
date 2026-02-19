@@ -1,4 +1,4 @@
-# 🚀 Microservices Architecture Project
+# 🚀 Backend Microservices Architecture Project
 
 A fully Dockerized Microservices-based backend system built using **Node.js, Express, MongoDB, Redis, RabbitMQ, Cloudinary, and JWT Authentication** following scalable production-grade architecture.
 
